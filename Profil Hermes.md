@@ -19,6 +19,11 @@ Setiap profil memiliki data independen yang tidak saling tercampur:
 - Memisahkan asisten kerjaan (misal bot urusan promotor/kantor) dengan asisten personal (Fern).
 - Menguji model AI, persona baru, atau plugin tanpa merusak setelan utama yang sudah stabil.
 
+## Perbedaan Profil vs Sub-Agent
+Banyak yang mengira keduanya sama, padahal tujuannya berbeda:
+- **Profil:** Lingkungan permanen yang benar-benar terpisah (ibarat beda user akun di Windows atau beda profile di Chrome). Konfigurasi, ingatan, kredensial, dan kepribadiannya beda sama sekali.
+- **Sub-Agent:** Pekerja lepas sementara yang dipanggil oleh agen utama (`delegate_task`) untuk menyelesaikan tugas tertentu secara paralel di latar belakang. Sub-agent berjalan di dalam profil yang sama, bekerja beberapa menit, mengembalikan hasil analisis ke agen utama, lalu otomatis nonaktif.
+
 ## Perintah Dasar CLI
 - Melihat daftar profil: `hermes profile list`
 - Membuat profil baru: `hermes profile create <nama>`
