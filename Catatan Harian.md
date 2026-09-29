@@ -8,5 +8,8 @@ Kumpulan log harian dan catatan aktivitas.
 - Mengonfigurasi Web Dashboard Hermes di port 9119 dan menghubungkannya ke domain publik via Cloudflare Tunnel.
 - Menyelesaikan kendala Host header dan WebSocket origin mismatch, serta memasang autentikasi basic login (didokumentasikan di [[Setup Dashboard Hermes dan Cloudflare Tunnel]]).
 - Melakukan audit keamanan VPS dan mencatat rekomendasinya di [[Audit Keamanan VPS]].
+- Menambahkan dokumentasi mengenai perbedaan [[Profil Hermes]] vs Sub-Agent.
+- Menambahkan dokumentasi mengenai [[Konsep Sesi dan Grup di Hermes]] (isolasi obrolan via `group_sessions_per_user`).
+- Menyesuaikan aturan pencatatan ke Obsidian agar hanya menyimpan informasi teknis krusial dan mendirikan rutinitas evaluasi malam harian.
 
 Kembali ke: [[Home]]
