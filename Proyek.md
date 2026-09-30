@@ -9,9 +9,12 @@ Daftar proyek dan tugas yang sedang aktif.
   - Repo: https://github.com/Ramadani-coding/nara-appsV2
 - [x] **Mission Control AI Team MVP & 2D Visual Office**
   - [x] Backend HTTP Server (`http.server` stdlib, port 9000, read-only SQLite `kanban.db` & `state.db`)
+  - [x] Managed via systemd service (`mission-control.service` auto-restart & boot start)
+  - [x] Cloudflare Tunnel & Cloudflare Access (`https://mission.herama.my.id`)
+  - [x] Mobile responsive overhaul (bottom nav, mobile 2D office viewport, auto cache-busting)
   - [x] Frontend SPA dark mode 7 tab (Overview, Agents, 2D Visual Office, Task Board, Calendar, Activity, Memory)
   - [x] Visual Office 2D pixel-art (Workspace 0 & Lounge room switching, automatic real data state mapping)
-  - [x] Integrasi OpenCode AI CLI terhubung ke 9Router `combo-nara`
+  - [x] Integrasi OpenCode AI CLI & Nara Marketing Agent (`nara-marketer`) terhubung ke 9Router `combo-nara`
 - [x] **Hardening Keamanan Server VPS**
   - [x] Pindah port SSH ke `2222/tcp` dan set `PermitRootLogin no`
   - [x] Pasang dan aktifkan firewall `firewalld` (port terbuka: 2222, 20128)
