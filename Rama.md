@@ -6,6 +6,7 @@ Profil pengguna / pemilik vault.
 - **Nama Lengkap:** Ahmad Ramadani
 - **Panggilan:** Rama
 - **Pekerjaan:** Promotor kartu di Syihab
+- **Bisnis:** Owner [[Nara Premium]] (e-commerce penjualan akun premium & produk digital otomatis)
 
 ## Minat & Keterampilan
 - **Teknologi & AI:** Coding dan eksplorasi teknologi AI.

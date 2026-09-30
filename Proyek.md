@@ -3,6 +3,10 @@
 Daftar proyek dan tugas yang sedang aktif.
 
 ## Prioritas Tinggi (Selesai / Aktif)
+- [x] **[[Nara Premium]] (Nara Apps v2)**
+  - Platform e-commerce otomatis penjualan akun premium (Midtrans QRIS + Supplier Premku API + GoWA WhatsApp gateway).
+  - Web: https://premium.herama.my.id
+  - Repo: https://github.com/Ramadani-coding/nara-appsV2
 - [x] **Mission Control AI Team MVP & 2D Visual Office**
   - [x] Backend HTTP Server (`http.server` stdlib, port 9000, read-only SQLite `kanban.db` & `state.db`)
   - [x] Frontend SPA dark mode 7 tab (Overview, Agents, 2D Visual Office, Task Board, Calendar, Activity, Memory)
