@@ -12,6 +12,10 @@ Kumpulan log harian dan catatan aktivitas.
 - Pembuatan dan pemasangan SSH Deploy Key baru untuk sinkronisasi repository vault `Ramadani-coding/hermes-obsidian`.
 - Audit dan perapian catatan hasil hardening keamanan VPS (firewalld, sshguard, port 2222, dan pembukaan port 20128 untuk 9Router).
 - Penyesuaian konfigurasi Hermes (`cron.wrap_response: false`) agar pesan pengingat/jadwal tampil bersih dan natural.
+- Menganalisis perbedaan rotasi multi-akun (load-balancing otomatis) vs rotasi model di 9Router, mendokumentasikannya ke dalam [[Arsitektur dan Konfigurasi 9Router]]. Disarankan menggunakan mode Fallback agar performa respons tetap konsisten.
+- Menyiapkan metode transfer identitas dan ingatan Fern antar-VPS via arsip file `SOUL.md` dan `memories/`, didokumentasikan di [[Transfer Ingatan Fern ke VPS Lain]].
+- Menjelaskan panduan akses Obsidian Vault di perangkat mobile (Android via Obsidian Git plugin + GitHub PAT; iOS via Working Copy atau Remotely Save).
+- Meninjau proyek `Mission Control Hermes` buatan komunitas (antarmuka kantor piksel 2D read-only dan pemantauan tugas/token berbasis Node.js 20+).
 
 ## 2026-09-29
 - Membentuk identitas asisten [[Fern]] dan profil pengguna [[Rama]].

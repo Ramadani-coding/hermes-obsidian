@@ -8,5 +8,7 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Audit Keamanan VPS]] (Laporan audit port, SSH, firewall, dan mitigasi risiko server)
 - [[Profil Hermes]] (Konsep multi-environment, isolasi memori, konfigurasi, dan perintah dasar)
 - [[Konsep Sesi dan Grup di Hermes]] (Isolasi obrolan DM vs grup, privasi, dan session key)
+- [[Arsitektur dan Konfigurasi 9Router]] (Perbedaan load-balancing akun vs rotasi model)
+- [[Transfer Ingatan Fern ke VPS Lain]] (Panduan salin identitas dan memori Hermes ke VPS berbeda)
 
 Kembali ke: [[Home]]
