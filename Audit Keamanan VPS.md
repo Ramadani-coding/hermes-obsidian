@@ -1,35 +1,30 @@
 # Audit Keamanan VPS
 
-Tanggal Audit: 2026-09-29
+Tanggal Audit: 2026-09-29 (Diperbarui: 2026-09-30)
 Auditor: [[Fern]]
 Target: VPS Ubuntu Linux
 
-## Ringkasan Temuan
-Status keamanan server saat ini tergolong **rawan** dan butuh perbaikan segera.
+## Ringkasan Temuan & Status Saat Ini
+Status keamanan server saat ini **sudah jauh lebih aman (Terproteksi)** setelah dilakukan tindakan hardening.
 
-## 1. Titik Lemah Kritis (High Risk)
-- **Firewall Lokal (UFW) Nonaktif:**
-  Status UFW `inactive`. Semua port yang terbuka pada `0.0.0.0` terekspos langsung ke jaringan luar.
-- **SSH Password & Root Login Terbuka:**
-  - `PermitRootLogin yes`
-  - `PasswordAuthentication yes`
-  - Dalam 2 jam terakhir tercatat 77+ percobaan brute force password yang gagal dari IP asing.
-  - Belum terpasang proteksi anti brute force seperti `fail2ban`.
-- **Port LLM Service (20128) Terbuka ke Publik:**
-  Service model local (`next-server` nara-combo) listen di `0.0.0.0:20128`, bukan `127.0.0.1`.
-
-## 2. Aspek yang Sudah Aman (Good)
+## 1. Konfigurasi Keamanan yang Sudah Diterapkan (Aman)
+- **Firewall Sistem (`firewalld`):**
+  - Service `firewalld` aktif dan berjalan (`active (running)`).
+  - Port yang terbuka dibatasi secara ketat hanya pada port `2222/tcp` (SSH) dan `20128/tcp` (9Router Dashboard).
+- **Proteksi SSH & Anti Brute-Force:**
+  - Port SSH diubah dari port standar 22 ke port `2222/tcp`.
+  - `PermitRootLogin no` sudah aktif (login langsung sebagai root ditolak).
+  - `sshguard` dipasang dan aktif memantau log `sshd` untuk memblokir IP penyerang otomatis via `nftables`.
 - **Hermes Dashboard (Port 9119):**
-  Listen pada `127.0.0.1` dan hanya dapat diakses melalui Cloudflare Tunnel terproteksi.
-- **Pembaruan Sistem:**
-  Tidak ada pending patch security kritis di apt saat ini.
+  - Listen pada `127.0.0.1` dan hanya dapat diakses melalui Cloudflare Tunnel terproteksi (`hermes.herama.my.id`).
+- **Autentikasi Git & Obsidian:**
+  - SSH Deploy Key (`id_ed25519_obsidian`) berhasil dipasang untuk sinkronisasi otomatis vault Obsidian ke repository GitHub `Ramadani-coding/hermes-obsidian`.
 
-## Rekomendasi Tindakan
-1. Pasang dan aktifkan `fail2ban` untuk memblokir IP penyerang otomatis.
-2. Batasi listen port 20128 ke `127.0.0.1` saja bila hanya dipakai lokal oleh Hermes.
-3. Matikan login SSH root (`PermitRootLogin no`) dan pertimbangkan beralih ke SSH Key auth saja.
-4. Aktifkan UFW dengan membuka port yang benar-benar esensial (misal port 22).
+## 2. Catatan & Rekomendasi Lanjutan
+1. Pertimbangkan mematikan `PasswordAuthentication no` pada SSH jika sudah sepenuhnya beralih ke SSH Key auth.
+2. Pastikan port `20128` (9Router) hanya diakses untuk kebutuhan pengelolaan router.
 
 Tautan Terkait:
+- [[Proyek]]
 - [[Pengetahuan]]
 - [[Home]]

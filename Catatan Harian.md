@@ -2,6 +2,12 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-09-30
+- Pemulihan memori, SOUL, dan profil Fern/Rama pasca reset sistem.
+- Pembuatan dan pemasangan SSH Deploy Key baru untuk sinkronisasi repository vault `Ramadani-coding/hermes-obsidian`.
+- Audit dan perapian catatan hasil hardening keamanan VPS (firewalld, sshguard, port 2222, dan pembukaan port 20128 untuk 9Router).
+- Penyesuaian konfigurasi Hermes (`cron.wrap_response: false`) agar pesan pengingat/jadwal tampil bersih dan natural.
+
 ## 2026-09-29
 - Membentuk identitas asisten [[Fern]] dan profil pengguna [[Rama]].
 - Menyiapkan vault Obsidian lokal di VPS dan mengaitkan sinkronisasi GitHub via SSH Deploy Key.

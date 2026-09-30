@@ -2,13 +2,18 @@
 
 Daftar proyek dan tugas yang sedang aktif.
 
-## Prioritas Tinggi (Pending)
-- [ ] **Hardening Keamanan Server VPS**
-  - [x] Pasang dan aktifkan `fail2ban` (Sudah aktif menjaga SSH)
-  - [ ] Perbaiki konfigurasi SSH (`PermitRootLogin no`, pertimbangkan key-only)
-  - [ ] Aktifkan firewall UFW
-  - [ ] Batasi akses port 20128 (`next-server` nara-combo) ke `127.0.0.1`
+## Prioritas Tinggi (Selesai / Aktif)
+- [x] **Hardening Keamanan Server VPS**
+  - [x] Pindah port SSH ke `2222/tcp` dan set `PermitRootLogin no`
+  - [x] Pasang dan aktifkan firewall `firewalld` (port terbuka: 2222, 20128)
+  - [x] Pasang dan aktifkan `sshguard` untuk mitigasi serangan brute-force via nftables
+  - [x] Selesaikan akses dashboard 9Router melalui firewall
   - Referensi teknis: [[Audit Keamanan VPS]]
-  - *Catatan:* Dikerjakan sepulang Rama kerja (jadwal pengingat otomatis diset pukul 22:00 malam).
+
+## Eksplorasi & Proyek Lanjutan
+- [ ] **Optimasi Model Routing & Fallback (9Router)**
+  - Pengaturan Round Robin fallback Gemini Pro via Antigravity OAuth.
+- [ ] **Pengembangan & Karakter Asisten Hermes**
+  - Mengasah gaya percakapan [[Fern]] agar tetap natural, ringkas, dan bebas dari format robotik AI.
 
 Kembali ke: [[Home]]
