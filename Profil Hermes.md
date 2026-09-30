@@ -19,6 +19,11 @@ Setiap profil memiliki data independen yang tidak saling tercampur:
 - Memisahkan asisten kerjaan (misal bot urusan promotor/kantor) dengan asisten personal (Fern).
 - Menguji model AI, persona baru, atau plugin tanpa merusak setelan utama yang sudah stabil.
 
+## Profil Aktif di VPS
+1. **`default` (Fern):** Persona utama (caretaker & agen serbaguna Rama), terhubung ke Telegram & terminal CLI.
+2. **`leadengineer` (Lead Engineer):** Agen arsitektur perangkat lunak & penjamin mutu kode.
+3. **`nara-marketer` (Nara):** Spesialis pemasaran & pembuat konten media sosial untuk [[Nara Premium]].
+
 ## Perbedaan Profil vs Sub-Agent
 Banyak yang mengira keduanya sama, padahal tujuannya berbeda:
 - **Profil:** Lingkungan permanen yang benar-benar terpisah (ibarat beda user akun di Windows atau beda profile di Chrome). Konfigurasi, ingatan, kredensial, dan kepribadiannya beda sama sekali.
