@@ -15,6 +15,10 @@ Daftar proyek dan tugas yang sedang aktif.
   - [x] Frontend SPA dark mode 7 tab (Overview, Agents, 2D Visual Office, Task Board, Calendar, Activity, Memory)
   - [x] Visual Office 2D pixel-art (Workspace 0 & Lounge room switching, automatic real data state mapping)
   - [x] Integrasi OpenCode AI CLI & Nara Marketing Agent (`nara-marketer`) terhubung ke 9Router `combo-nara`
+- [x] **Apple Quick-Hub Promotor Portal (`https://link.herama.my.id`)**
+  - [x] Portal PWA mobile-first untuk link aktivasi, cek garansi AppleCare, IMEI Kemenperin & Bea Cukai
+  - [x] Backend SQLite CRUD (`http.server` dual-stack port 9050, ~10MB RAM)
+  - [x] Managed via systemd service (`warranty-hub.service`) & Cloudflare Tunnel
 - [x] **Hardening Keamanan Server VPS**
   - [x] Pindah port SSH ke `2222/tcp` dan set `PermitRootLogin no`
   - [x] Pasang dan aktifkan firewall `firewalld` (port terbuka: 2222, 20128)
