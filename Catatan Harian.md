@@ -2,6 +2,10 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-10-02
+- Evaluasi arsitektur deployment VPS (RAM 2 GB): Analisis perbandingan native `systemd` service vs Docker container untuk Mission Control, Warranty Quick-Hub, dan Cloudflare Tunnel. Diputuskan tetap mempertahankan deployment native Python stdlib & cloudflared via systemd demi efisiensi memori (menghemat overhead Docker daemon ~50-100 MB).
+- Verifikasi dan audit berkala proteksi server via `sshguard` & `sshd`: Terdata 499 log serangan dari 161 IP scanner, dengan 18 aksi pemblokiran otomatis `nftables` pada 7 IP agresif. Pertahanan server terverifikasi tangguh dan efisien.
+
 ## 2026-10-01
 - Perancangan dan peluncuran aplikasi [[Warranty Quick-Hub Promotor Portal]] (`https://link.herama.my.id`) berbasis Python dual-stack HTTP server + SQLite (`warranty.db`) di port 9050, terhubung via Cloudflare Tunnel.
 - Pembentukan agen baru **Nara** (`nara-marketer`) sebagai spesialis pemasaran produk digital [[Nara Premium]], terintegrasi ke 9Router `combo-nara` dan Mission Control Dashboard.
