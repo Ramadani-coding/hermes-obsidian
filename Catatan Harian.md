@@ -3,7 +3,13 @@
 Kumpulan log harian dan catatan aktivitas.
 
 ## 2026-10-03
-- Pemeriksaan berkala: Tidak ada sesi percakapan atau tugas teknis baru dari Rama dalam 24 jam terakhir. Seluruh layanan berjalan stabil.
+- Inisiasi arsitektur dan pengembangan proyek baru [[Nara Topup]] (`/home/ubuntu/nara-topup`): sistem top-up game instan guest checkout tanpa akun pembeli berbasis Next.js 15, Tailwind CSS, TypeScript, dan Midtrans QRIS.
+- Integrasi database Supabase PostgreSQL (v17.11) via Prisma ORM dengan konfigurasi `DATABASE_URL` (pooler) dan `DIRECT_URL` (direct).
+- Konfigurasi toolchain OpenCode AI dengan MCP Upstash Context7 (`@upstash/context7-mcp`) dan remote MCP Supabase (`https://mcp.supabase.com/mcp`).
+- Penyiapan akses remote development via VS Code Remote-SSH di port 2222 langsung ke VPS.
+- Penyelesaian UI katalog etalase game responsif Nara Topup dengan referensi desain industri gaming.
+- Perbaikan kendala 502 Bad Gateway Cloudflare Tunnel pada Mission Control: pembaruan server HTTP Python stdlib menggunakan pola `DualStackHTTPServer` binding IPv4/IPv6 (`::`) dengan `IPV6_V6ONLY=0`.
+- Konfigurasi suara TTS asisten Fern menggunakan Edge TTS model bahasa Indonesia wanita alami (`id-ID-GadisNeural`) dengan preferensi hanya mengirim VN saat diminta eksplisit.
 
 ## 2026-10-02
 - Evaluasi arsitektur deployment VPS (RAM 2 GB): Analisis perbandingan native `systemd` service vs Docker container untuk Mission Control, Warranty Quick-Hub, dan Cloudflare Tunnel. Diputuskan tetap mempertahankan deployment native Python stdlib & cloudflared via systemd demi efisiensi memori (menghemat overhead Docker daemon ~50-100 MB).

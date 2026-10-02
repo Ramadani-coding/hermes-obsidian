@@ -3,6 +3,10 @@
 Daftar proyek dan tugas yang sedang aktif.
 
 ## Prioritas Tinggi (Selesai / Aktif)
+- [ ] **[[Nara Topup]] (Top-up Game Instan)**
+  - Platform top-up game instan otomatis tanpa registrasi akun (guest checkout, Midtrans QRIS, Supabase PostgreSQL, Prisma ORM, Next.js 15).
+  - Lokasi: `/home/ubuntu/nara-topup`
+  - Status: PRD matang, database Supabase terhubung, OpenCode MCP Context7 & Supabase aktif, frontend katalog etalase responsif selesai dibangun.
 - [x] **[[Nara Premium]] (Nara Apps v2)**
   - Platform e-commerce otomatis penjualan akun premium (Midtrans QRIS + Supplier Premku API + GoWA WhatsApp gateway).
   - Web: https://premium.herama.my.id

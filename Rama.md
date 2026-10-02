@@ -6,7 +6,7 @@ Profil pengguna / pemilik vault.
 - **Nama Lengkap:** Ahmad Ramadani
 - **Panggilan:** Rama
 - **Pekerjaan:** Mantan promotor kartu (resign dari XL SMART per 1 Oktober 2026), fokus ke bisnis [[Nara Premium]] dan proyek teknis.
-- **Bisnis:** Owner [[Nara Premium]] (e-commerce penjualan akun premium & produk digital otomatis)
+- **Bisnis:** Owner [[Nara Premium]] dan [[Nara Topup]] (e-commerce produk digital, akun premium, dan top-up game instan otomatis)
 
 ## Minat & Keterampilan
 - **Teknologi & AI:** Coding dan eksplorasi teknologi AI.
