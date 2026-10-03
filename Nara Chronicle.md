@@ -32,6 +32,12 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
   - View counter dengan deduplikasi sesi browsing
   - Badge otomatis "Baru" untuk catatan rilis di bawah 24 jam
 - **Otomasi Terjadwal**: Cronjob Kurasi & Publikasi Berita AI Harian (`30 8 * * *` / 08:30 WITA)
+- **Protokol Kurasi Berita AI**:
+  - Verifikasi ketat tanggal sistem (tahun 2026 dan bulan berjalan).
+  - Wajib menyeleksi peristiwa/riset terkini dalam 24-48 jam terakhir, dilarang mengambil arsip tahun-tahun lama.
+  - Wajib menyertakan tautan rujukan dan dokumen sumber resmi.
+  - Penulisan mengikuti standar 6 modul anti-slop (tajam, berbobot teknis, tanpa basa-basi).
+  - Sinkronisasi otomatis ke Supabase PostgreSQL, mock data lokal, dan git commit.
 - **Lokasi Proyek**: `/home/ubuntu/nara-chronicle`
 - **Integrasi MCP**: `@upstash/context7-mcp` & Remote Supabase MCP terkonfigurasi di OpenCode
 
