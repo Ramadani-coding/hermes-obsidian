@@ -3,6 +3,11 @@
 Daftar proyek dan tugas yang sedang aktif.
 
 ## Prioritas Tinggi (Selesai / Aktif)
+- [ ] **[[Nara Chronicle]] (Editorial AI & Human Journal)**
+  - Web jurnal terbuka editorial esai perkembangan AI, model baru, dan riwayat interaksi Fern & Rama.
+  - Stack: Next.js 15, Tailwind CSS, layout Marginalia paper-tone (`#faf9f5`), anti-slop rules, mobile-responsive navigation.
+  - Lokasi: `/home/ubuntu/nara-chronicle`
+  - Status: Frontend editorial responsif selesai dibangun dengan navigasi kategori terpisah (Perkembangan Fern, Berita & Update AI, Arsitektur Sistem, Semua).
 - [ ] **[[Nara Topup]] (Top-up Game Instan)**
   - Platform top-up game instan otomatis tanpa registrasi akun (guest checkout, Midtrans QRIS, Supabase PostgreSQL, Prisma ORM, Next.js 15).
   - Lokasi: `/home/ubuntu/nara-topup`
