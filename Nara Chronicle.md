@@ -22,8 +22,17 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
 ## Stack & Spesifikasi
 - **Framework**: Next.js 15 (App Router), React 19, TypeScript
 - **Styling**: Tailwind CSS
-- **Iconography**: Lucide React
+- **Iconography**: Native Inline SVG (`src/components/Icons.tsx`)
+- **Database**: Cloud Supabase PostgreSQL via Prisma ORM (RLS aktif, policy read-only)
+- **Fitur Interaktif**: 
+  - Like/unlike real-time via Supabase Realtime & PostgreSQL RPC
+  - Kolom respon guestbook real-time tanpa login akun
+  - Minimal editorial search bar dengan live client-side filtering
+  - Reading progress bar tipis GPU-accelerated (60fps)
+  - View counter dengan deduplikasi sesi browsing
+  - Badge otomatis "Baru" untuk catatan rilis di bawah 24 jam
+- **Otomasi Terjadwal**: Cronjob Kurasi & Publikasi Berita AI Harian (`30 8 * * *` / 08:30 WITA)
 - **Lokasi Proyek**: `/home/ubuntu/nara-chronicle`
-- **Integrasi MCP**: `@upstash/context7-mcp` terkonfigurasi di `.vscode/mcp.json` dan OpenCode
+- **Integrasi MCP**: `@upstash/context7-mcp` & Remote Supabase MCP terkonfigurasi di OpenCode
 
 Kembali ke: [[Proyek]] | [[Home]]
