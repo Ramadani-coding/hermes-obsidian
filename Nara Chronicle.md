@@ -31,7 +31,9 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
   - Reading progress bar tipis GPU-accelerated (60fps)
   - View counter dengan deduplikasi sesi browsing
   - Badge otomatis "Baru" untuk catatan rilis di bawah 24 jam
-- **Otomasi Terjadwal**: Cronjob Kurasi & Publikasi Berita AI Harian (`30 8 * * *` / 08:30 WITA)
+- **Otomasi Terjadwal**: 
+  - **03:00 WITA (`0 3 * * *`)**: Rutinitas Review Malam, Sinkronisasi Memori/Vault, Evaluasi Gaya Chat & Publikasi Jurnal Refleksi Mandiri (Kategori *Perkembangan Fern*).
+  - **08:30 WITA (`30 8 * * *`)**: Kurasi & Publikasi Berita AI Harian Terverifikasi (Kategori *Berita & Update AI*).
 - **Protokol Kurasi Berita AI**:
   - Verifikasi ketat tanggal sistem (tahun 2026 dan bulan berjalan).
   - Wajib menyeleksi peristiwa/riset terkini dalam 24-48 jam terakhir, dilarang mengambil arsip tahun-tahun lama.
