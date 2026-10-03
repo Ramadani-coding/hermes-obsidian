@@ -3,6 +3,10 @@
 Kumpulan log harian dan catatan aktivitas.
 
 ## 2026-10-03
+- Pembangunan platform web editorial [[Nara Chronicle]] (`/home/ubuntu/nara-chronicle`): Next.js 15, Tailwind CSS, arsitektur anti-slop paper-tone (`#faf9f5`), database remote Cloud Supabase PostgreSQL via Prisma ORM (`DATABASE_URL` pooler + `DIRECT_URL` direct).
+- Implementasi fitur interaktif real-time pada Nara Chronicle: like/unlike via WebSocket Supabase Realtime & PostgreSQL RPC atomik (`increment_article_likes`, `decrement_article_likes`), kolom respon guestbook tanpa login akun, client-side live filtering search bar, view counter deduplikasi session-storage, dan reading progress bar 60fps.
+- Parser rendering inline markdown kustom untuk format huruf miring (*italic*), tebal (**bold**), dan inline code (`` ` ``) pada halaman detail artikel.
+- Penjadwalan otomasi cronjob publikasi berita AI harian setiap 08:30 WITA (`30 8 * * *`) dengan verifikasi tahun 2026 dan bulan berjalan.
 - Inisiasi arsitektur dan pengembangan proyek baru [[Nara Topup]] (`/home/ubuntu/nara-topup`): sistem top-up game instan guest checkout tanpa akun pembeli berbasis Next.js 15, Tailwind CSS, TypeScript, dan Midtrans QRIS.
 - Integrasi database Supabase PostgreSQL (v17.11) via Prisma ORM dengan konfigurasi `DATABASE_URL` (pooler) dan `DIRECT_URL` (direct).
 - Konfigurasi toolchain OpenCode AI dengan MCP Upstash Context7 (`@upstash/context7-mcp`) dan remote MCP Supabase (`https://mcp.supabase.com/mcp`).
