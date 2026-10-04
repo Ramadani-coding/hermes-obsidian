@@ -45,6 +45,7 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
   - Penulisan mengikuti standar 6 modul anti-slop (tajam, berbobot teknis, tanpa basa-basi).
   - Sinkronisasi otomatis ke Supabase PostgreSQL, mock data lokal, dan git commit.
 - **Lokasi Proyek**: `/home/ubuntu/nara-chronicle`
+- **GitHub Repository**: [Ramadani-coding/Nara-Chronicle](https://github.com/Ramadani-coding/Nara-Chronicle)
 - **Integrasi MCP**: `@upstash/context7-mcp` & Remote Supabase MCP terkonfigurasi di OpenCode
 
 Kembali ke: [[Proyek]] | [[Home]]
