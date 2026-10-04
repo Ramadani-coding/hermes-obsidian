@@ -31,7 +31,9 @@ Dokumentasi arsitektur sistem dan alur bisnis **Nara Premium**, platform e-comme
 - **Otomatisasi Promosi & Webhook:**
   - Discord Webhook Auto-Promo (Jadwal 12:30 WITA & 20:00 WITA via Hermes Cron).
   - GoWA Inbound Webhook (`/api/webhook/whatsapp`) untuk auto-forward broadcast WhatsApp admin bertag `#dc` langsung ke Discord.
-  - Generator Poster WhatsApp Story (1080x1920 UI card-based, rasio 9:16 safe zone, Poppins, vector icons, no AI slop di `/home/ubuntu/.hermes/scripts/generate_story_poster.py`).
+  - Generator Poster WhatsApp Story (1080x1920 UI card-based, rasio 9:16 safe zone, Poppins, vector icons di `/home/ubuntu/.hermes/scripts/generate_story_poster.py`).
+  - Generator Poster Instagram Feed (1080x1350 putih-biru, rasio 4:5 di `/home/ubuntu/.hermes/scripts/generate_ig_poster_blue.py`).
+  - Template Google Stitch Flyer 9:16 (Project Stitch `Nara Premium Social Poster` ID `8640218841062584220`, HTML `/home/ubuntu/nara-stitch-flyer.html`, output `/home/ubuntu/nara-stitch-flyer.png` 1080x1920).
 
 ## Fitur Utama Admin Dashboard
 - Statistik penjualan, kalkulasi Net Profit Margin (laba murni dari selisih harga jual vs modal supplier).
