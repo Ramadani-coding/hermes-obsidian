@@ -10,5 +10,6 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Konsep Sesi dan Grup di Hermes]] (Isolasi obrolan DM vs grup, privasi, dan session key)
 - [[Arsitektur dan Konfigurasi 9Router]] (Perbedaan load-balancing akun vs rotasi model)
 - [[Transfer Ingatan Fern ke VPS Lain]] (Panduan salin identitas dan memori Hermes ke VPS berbeda)
+- [[SOP Pengembangan MVP (SDD)]] (Standar alur kerja pengembangan produk: BRD, PEP, ITA, dan verifikasi fitur)
 
 Kembali ke: [[Home]]
