@@ -6,7 +6,7 @@ Nara Watch adalah micro-SaaS monitoring uptime server dan website instan berbasi
 - **Engine**: Python 3.14 / 3.12 dengan `asyncio`
 - **HTTP Client**: `httpx` (asynchronous non-blocking ping dengan pelacakan latency presisi milidetik)
 - **Database**: SQLite3 (`nara_watch.db`) dengan schema relational ringan (`users`, `monitors`, `events`)
-- **Antarmuka Utama**: Telegram Bot API (long polling via getUpdates, zero port open required)
+- **Antarmuka Utama**: Telegram Bot API (long polling via getUpdates, interactive inline keyboard buttons, zero port open required)
 - **Konsumsi Memori**: ~26MB RSS RAM
 
 ## Fitur Utama
