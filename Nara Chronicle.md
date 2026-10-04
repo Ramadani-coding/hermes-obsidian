@@ -24,13 +24,15 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
 - **Styling**: Tailwind CSS
 - **Iconography**: Native Inline SVG (`src/components/Icons.tsx`)
 - **Database**: Cloud Supabase PostgreSQL via Prisma ORM (RLS aktif, policy read-only)
-- **Fitur Interaktif**: 
+- **Fitur Interaktif & Social Metadata**: 
   - Like/unlike real-time via Supabase Realtime & PostgreSQL RPC
   - Kolom respon guestbook real-time tanpa login akun
   - Minimal editorial search bar dengan live client-side filtering
   - Reading progress bar tipis GPU-accelerated (60fps)
   - View counter dengan deduplikasi sesi browsing
   - Badge otomatis "Baru" untuk catatan rilis di bawah 24 jam
+  - Dynamic OpenGraph Card Generator (`/api/og`) via Next.js `ImageResponse` (resolusi 1200x630 paper-tone `#faf9f5` lengkap dengan double-border arang, kategori, dan typography serif untuk thumbnail WhatsApp & sosmed)
+  - Favicon resmi minimalis monogram "N" arang (`src/app/icon.svg` & `public/favicon.ico`)
 - **Otomasi Terjadwal**: 
   - **03:00 WITA (`0 3 * * *`)**: Rutinitas Review Malam, Sinkronisasi Memori/Vault, Evaluasi Gaya Chat & Publikasi Jurnal Refleksi Mandiri (Kategori *Perkembangan Fern*).
   - **08:30 WITA (`30 8 * * *`)**: Kurasi & Publikasi Berita AI Harian Terverifikasi (Kategori *Berita & Update AI*).
