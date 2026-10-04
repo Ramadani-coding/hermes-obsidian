@@ -31,7 +31,7 @@ Dokumentasi arsitektur sistem dan alur bisnis **Nara Premium**, platform e-comme
 - **Otomatisasi Promosi & Webhook:**
   - Discord Webhook Auto-Promo (Jadwal 12:30 WITA & 20:00 WITA via Hermes Cron).
   - GoWA Inbound Webhook (`/api/webhook/whatsapp`) untuk auto-forward broadcast WhatsApp admin bertag `#dc` langsung ke Discord.
-  - Generator Poster WhatsApp Story (1080x1920 minimalis clean via Pillow di `/home/ubuntu/.hermes/scripts/generate_story_poster_simple.py`).
+  - Generator Poster WhatsApp Story (1080x1920 UI card-based, rasio 9:16 safe zone, Poppins, vector icons, no AI slop di `/home/ubuntu/.hermes/scripts/generate_story_poster.py`).
 
 ## Fitur Utama Admin Dashboard
 - Statistik penjualan, kalkulasi Net Profit Margin (laba murni dari selisih harga jual vs modal supplier).
