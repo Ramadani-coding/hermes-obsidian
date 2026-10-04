@@ -13,10 +13,15 @@ Nara Watch adalah micro-SaaS monitoring uptime server dan website instan berbasi
 1. **Deteksi Gangguan & Pemulihan (State Machine)**:
    - Notifikasi seketika jika target DOWN (Connection Timeout, DNS Error, status 500/502/503).
    - Notifikasi pemulihan saat layanan kembali UP disertai rincian latency.
-2. **Kendali Penuh via Telegram Bot**:
+2. **Pemantauan Masa Aktif SSL Otomatis**:
+   - Pengecekan TLS handshake tanpa membebani server target.
+   - Deteksi sisa hari masa aktif sertifikat SSL, tanggal kedaluwarsa, dan penerbit (CA).
+   - Peringatan otomatis jika sertifikat mendekati kedaluwarsa (<7 hari & <3 hari).
+3. **Kendali Penuh via Telegram Bot**:
    - `/add <url> [nama]`: Daftarkan URL website atau API target.
-   - `/list`: Daftar target aktif beserta indikator status (🟢 UP / 🔴 DOWN) dan response time.
-   - `/check <url>`: Pengujian on-demand instan tanpa harus mendaftarkan target.
+   - `/list`: Daftar target aktif beserta indikator status, response time, dan badge sisa hari SSL dengan tombol interaktif (⚡ Cek instan, 🗑️ Hapus aman).
+   - `/ssl`: Tampilan ringkas status masa aktif sertifikat SSL seluruh website.
+   - `/check <url>`: Pengujian on-demand instan (HTTP status + SSL info) tanpa harus mendaftarkan target.
    - `/delete <id>`: Menghapus target monitor.
    - `/status`: Ringkasan kesehatan seluruh sistem.
 
