@@ -7,3 +7,5 @@ Exploring AI image generation. Uses Antigravity OAuth in 9Router to access Gemin
 Owner of Nara Premium (https://premium.herama.my.id, automated premium account D2C), Nara Topup (/home/ubuntu/nara-topup, Next.js 15, Supabase, Midtrans QRIS), and Nara Chronicle (/home/ubuntu/nara-chronicle, editorial anti-slop Next.js 15, Supabase). Uses VS Code Remote-SSH on port 2222.
 §
 Preferences for voice: only send voice note (VN) when explicitly asked by user, never by default on every chat.
+§
+Adopts Spec-Driven Development (SDD) as team SOP for building new projects: locks BRD, PEP, ITA, and test criteria before coding.
