@@ -17,9 +17,14 @@ Nara Watch adalah micro-SaaS monitoring uptime server dan website instan berbasi
    - Pengecekan TLS handshake tanpa membebani server target.
    - Deteksi sisa hari masa aktif sertifikat SSL, tanggal kedaluwarsa, dan penerbit (CA).
    - Peringatan otomatis jika sertifikat mendekati kedaluwarsa (<7 hari & <3 hari).
-3. **Kendali Penuh via Telegram Bot**:
+3. **Monitoring Resource Host VPS**:
+   - Visual progress bar CPU load average, RAM usage (`/proc/meminfo`), dan disk root (`shutil.disk_usage`).
+   - Uptime host serta status service systemd utama (`mission-control`, `warranty-hub`, `nara-watch`, `cloudflared`) dan 9Router.
+   - Peringatan darurat Telegram otomatis jika penggunaan RAM atau Disk menyentuh ambang batas >=90% (cooldown 15 menit).
+4. **Kendali Penuh via Telegram Bot**:
    - `/add <url> [nama]`: Daftarkan URL website atau API target.
-   - `/list`: Daftar target aktif beserta indikator status, response time, dan badge sisa hari SSL dengan tombol interaktif (⚡ Cek instan, 🗑️ Hapus aman).
+   - `/list`: Daftar target aktif beserta indikator status, response time, dan badge sisa hari SSL dengan tombol interaktif (⚡ Cek instan, 🗑️ Hapus aman, 🖥️ Resource VPS).
+   - `/server` atau `/vps`: Ringkasan langsung beban server host dan status layanan penting.
    - `/ssl`: Tampilan ringkas status masa aktif sertifikat SSL seluruh website.
    - `/check <url>`: Pengujian on-demand instan (HTTP status + SSL info) tanpa harus mendaftarkan target.
    - `/delete <id>`: Menghapus target monitor.
