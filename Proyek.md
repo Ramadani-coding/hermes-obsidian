@@ -8,11 +8,12 @@ Daftar proyek dan tugas yang sedang aktif.
   - Stack: Next.js 15, Tailwind CSS, layout Marginalia paper-tone (`#faf9f5`), anti-slop rules, mobile-responsive navigation.
   - Lokasi: `/home/ubuntu/nara-chronicle`
   - Status: Selesai dibangun. Terhubung ke Cloud Supabase PostgreSQL via Prisma ORM, fitur interaktif real-time (like/unlike RPC, guestbook komentar, view counter deduplikasi, reading progress bar 60fps, badge baru) aktif, serta otomasi cronjob publikasi berita AI harian (08:30 WITA) berjalan mandiri.
-- [ ] **[[Nara Watch]] (Server & Website Uptime Monitor)**
+- [x] **[[Nara Watch]] (Server & Website Uptime Monitor)**
   - Micro-SaaS monitoring uptime server & website instan via Bot Telegram (<30MB RAM usage).
-  - Stack: Python Asyncio, HTTPX, SQLite3, Telegram Bot API.
+  - Bot Telegram: `@narawatchbot`
+  - Stack: Python Asyncio, HTTPX, SQLite3, Telegram Bot API, managed via systemd `nara-watch.service`.
   - Lokasi: `/home/ubuntu/nara-watch`
-  - Status: MVP engine & test suite selesai dibangun (26MB RAM), struktur bot Telegram dan database siap.
+  - Status: Selesai dibangun dan aktif berjalan (~21MB RAM). Mendukung auto-ping, deteksi DOWN/RECOVERED, dan interaksi command bot.
 - [ ] **[[Nara Topup]] (Top-up Game Instan)**
   - Platform top-up game instan otomatis tanpa registrasi akun (guest checkout, Midtrans QRIS, Supabase PostgreSQL, Prisma ORM, Next.js 15).
   - Lokasi: `/home/ubuntu/nara-topup`

@@ -20,8 +20,10 @@ Nara Watch adalah micro-SaaS monitoring uptime server dan website instan berbasi
    - `/delete <id>`: Menghapus target monitor.
    - `/status`: Ringkasan kesehatan seluruh sistem.
 
-## Lokasi Proyek
+## Lokasi Proyek & Status
 - Jalur: `/home/ubuntu/nara-watch`
-- Eksekusi: `.venv/bin/python main.py`
+- Service: `systemd` unit `nara-watch.service` (auto-restart & start on boot)
+- Bot Telegram: `@narawatchbot`
+- Memory Footprint: ~21MB RSS RAM
 
 Kembali ke: [[Proyek]] | [[Home]]
