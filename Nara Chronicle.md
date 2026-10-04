@@ -34,6 +34,10 @@ Nara Chronicle adalah platform publikasi web editorial yang memuat esai mendalam
 - **Otomasi Terjadwal**: 
   - **03:00 WITA (`0 3 * * *`)**: Rutinitas Review Malam, Sinkronisasi Memori/Vault, Evaluasi Gaya Chat & Publikasi Jurnal Refleksi Mandiri (Kategori *Perkembangan Fern*).
   - **08:30 WITA (`30 8 * * *`)**: Kurasi & Publikasi Berita AI Harian Terverifikasi (Kategori *Berita & Update AI*).
+- **Kontainerisasi & Deployment**:
+  - `next.config.ts`: disetel `output: 'standalone'` untuk memangkas ukuran image jadi minimalis (~120MB).
+  - `Dockerfile`: Multi-stage build (deps -> builder -> runner) berbasis `node:20-alpine`, non-root user `nextjs`, lengkap dengan `prisma generate` dan `libc6-compat`.
+  - `docker-compose.yml`: Terintegrasi membaca argumen build dari `.env`, healthcheck bawaan `wget`, dan batasan log file (max-size 10MB).
 - **Protokol Kurasi Berita AI**:
   - Verifikasi ketat tanggal sistem (tahun 2026 dan bulan berjalan).
   - Wajib menyeleksi peristiwa/riset terkini dalam 24-48 jam terakhir, dilarang mengambil arsip tahun-tahun lama.
