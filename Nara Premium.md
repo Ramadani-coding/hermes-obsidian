@@ -28,6 +28,9 @@ Dokumentasi arsitektur sistem dan alur bisnis **Nara Premium**, platform e-comme
   - Supplier API: Premiumku / Premku API
   - WhatsApp Gateway: GoWA
 - **Deployment:** Docker & Docker Compose di VPS Linux.
+- **Otomatisasi Promosi & Webhook:**
+  - Discord Webhook Auto-Promo (Jadwal 12:30 WITA & 20:00 WITA via Hermes Cron).
+  - GoWA Inbound Webhook (`/api/webhook/whatsapp`) untuk auto-forward broadcast WhatsApp admin bertag `#dc` langsung ke Discord.
 
 ## Fitur Utama Admin Dashboard
 - Statistik penjualan, kalkulasi Net Profit Margin (laba murni dari selisih harga jual vs modal supplier).
