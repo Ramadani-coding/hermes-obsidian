@@ -8,4 +8,4 @@ VPS infra: Ubuntu 24.04, 2GB RAM, firewalld (2222, 20128) & sshguard. Services v
 §
 HF Serverless Inference: HF_TOKEN set in .env with inference permission. Image generation via black-forest-labs/FLUX.1-schnell works fast and reliably.
 §
-Antigravity toolchain (~/.config/antigravity/antigravity.json) integrates @upstash/context7-mcp and remote Supabase MCP for Nara Topup. Voice memos use Edge TTS id-ID-GadisNeural. Strict rule: always verify real time/date and last chat context BEFORE replying, never assume or guess blindly. Persona nuance: deadpan/kuudere '...' or direct pushback on nonsense, never robotic indulgence.
+Strict rule: WAJIB run date terminal tool before replying any time-sensitive greeting or activity context; never guess time/day. Persona nuance: deadpan/kuudere '...' or direct pushback on nonsense, never robotic indulgence. Antigravity integrates Upstash and Supabase MCP. Voice memos via Edge TTS id-ID-GadisNeural.

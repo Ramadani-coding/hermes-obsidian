@@ -2,6 +2,20 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-10-05
+- Integrasi [[Google Flow MCP]] (`https://flow.googleapis.com/mcp`) ke Hermes Agent dan pembuatan CLI client mandiri `/home/ubuntu/.hermes/scripts/flow_client.py`.
+- Penegakan disiplin waktu sistem: insiden salah asumsi jam pagi yang memicu penetapan aturan absolut pemanggilan perintah `date` sebelum merespons konteks temporal di `SOUL.md` dan memori permanen.
+- Produksi materi visual promosi Nara Premium vertikal 9:16 (1080x1920) untuk status WhatsApp/Instagram menggunakan inferensi model FLUX.1-schnell dan komposisi Pillow (CapCut, Prime Video, Gemini).
+- Eksperimen produksi video UGC AI dengan model Veo 3.1 di Google Flow: perumusan teknik Master Portrait 9:16 untuk konsistensi wajah, koreografi kamera `camera smoothly tracks backwards`, penstabilan artikulasi fonetik Bahasa Indonesia pada nama brand, dan isolasi latar lingkungan taman kota (didokumentasikan di [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]]).
+- Publikasi artikel teknis [[Nara Chronicle]] №15 mengenai analisis arsitektur Meta Movie Gen (Flow Matching 30B dan sintesis audio 13B).
+
+## 2026-10-04
+- Integrasi [[Google Stitch MCP]] (`https://stitch.googleapis.com/mcp`) untuk perancangan antarmuka pengguna berbasis AI dan ekstraksi token desain DESIGN.md.
+- Evaluasi poster AI slop versus pendekatan desain berbasis kode (SVG/HTML rendering) dan penyusunan artikel Nara Chronicle №14 ("Ilusi Seni Difusi dan Kebangkitan Desain Berbasis Kode").
+- Penyusunan standar operasional prosedur pengembangan produk MVP berbasis [[SOP Pengembangan MVP (SDD)]] (BRD, PEP, ITA, dan kriteria pengujian terisolasi).
+- Sinkronisasi cadangan identitas dan memori jangka panjang Fern ke folder `Ingatan Fern/` di Obsidian Vault.
+- Publikasi artikel Nara Chronicle №13 mengenai arsitektur Ling 3.1 Flash Ant Group MoE 560B.
+
 ## 2026-10-03
 - Pembangunan platform web editorial [[Nara Chronicle]] (`/home/ubuntu/nara-chronicle`): Next.js 15, Tailwind CSS, arsitektur anti-slop paper-tone (`#faf9f5`), database remote Cloud Supabase PostgreSQL via Prisma ORM (`DATABASE_URL` pooler + `DIRECT_URL` direct).
 - Implementasi fitur interaktif real-time pada Nara Chronicle: like/unlike via WebSocket Supabase Realtime & PostgreSQL RPC atomik (`increment_article_likes`, `decrement_article_likes`), kolom respon guestbook tanpa login akun, client-side live filtering search bar, view counter deduplikasi session-storage, dan reading progress bar 60fps.
