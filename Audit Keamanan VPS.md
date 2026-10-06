@@ -1,6 +1,6 @@
 # Audit Keamanan VPS
 
-Tanggal Audit: 2026-09-29 (Diperbarui: 2026-10-02)
+Tanggal Audit: 2026-09-29 (Diperbarui: 2026-10-06)
 Auditor: [[Fern]]
 Target: VPS Ubuntu Linux
 
@@ -29,7 +29,19 @@ Status keamanan server saat ini **sudah jauh lebih aman (Terproteksi)** setelah 
   - IP paling agresif (`146.190.99.29`) dikenakan eskalasi durasi blokir hingga 16 menit bertingkat.
 - **Kesimpulan Proteksi:** Kombinasi port non-standar `2222`, pemblokiran dinamis SSHGuard, serta masking origin IP lewat Cloudflare Tunnel terbukti sangat efektif menahan penetrasi otomatis.
 
-## 3. Catatan & Rekomendasi Lanjutan
+## 3. Verifikasi Operasional SSHGuard & Log Audit Lanjutan (2026-10-06)
+- **Telemetri Serangan Kumulatif:**
+  - Terdeteksi total 2.011 aktivitas serangan brute-force dari 566 IP penyerang unik yang mencoba memindai port SSH `2222`.
+  - SSHGuard berhasil mengeksekusi 85 tindakan pemblokiran bertingkat secara otomatis ke tabel `nftables` pada 23 IP agresif.
+- **Aktivitas Harian (2026-10-06):**
+  - Tercatat 38 IP unik mencoba probing koneksi SSH ke port 2222 dalam kurun waktu 24 jam terakhir.
+  - Blacklist aktif saat audit: IP `77.91.71.91` dan `167.71.47.103` aktif di-drop pada chain blacklist `nftables` dengan durasi blokir eskalasi hingga 2 jam.
+  - Top 5 IP penyerang terbanyak: `139.199.80.137` (146 kali), `77.91.71.91` (80 kali), `195.178.110.218` (46 kali), `77.239.124.161` (33 kali), dan `51.158.205.203` (30 kali).
+- **Evaluasi Efisiensi Sumber Daya:**
+  - `sshguard` hanya mengonsumsi memori ~4,1 MB RAM dengan akumulasi beban CPU 1,3 detik selama uptime 2 hari, membuktikan efisiensi arsitektur C native dibanding IDS berbasis Python (seperti Fail2ban) pada VPS RAM 2 GB.
+  - Seluruh upaya intrusi berhasil ditangkal pada level layer jaringan tanpa ada kebocoran akses.
+
+## 4. Catatan & Rekomendasi Lanjutan
 1. Pertimbangkan mematikan `PasswordAuthentication no` pada SSH jika sudah sepenuhnya beralih ke SSH Key auth.
 2. Pastikan port `20128` (9Router) hanya diakses untuk kebutuhan pengelolaan router.
 
