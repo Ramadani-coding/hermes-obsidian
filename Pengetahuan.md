@@ -13,6 +13,7 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[SOP Pengembangan MVP (SDD)]] (Standar alur kerja pengembangan produk: BRD, PEP, ITA, dan verifikasi fitur)
 - [[Google Stitch MCP Integration|Google Stitch MCP]] (Integrasi desain UI/UX otomatis via Gemini 3 Pro dan Model Context Protocol)
 - [[Google Flow MCP]] (Integrasi studio video dan aset kreatif Veo 3.1 via Model Context Protocol)
+- [[Pacific Pedia SMM Integration]] (PRD dan arsitektur platform SMM Panel Next.js, Tailwind, Supabase, Prisma)
 - [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]] (Panduan teknis konsistensi wajah, koreografi kamera, dan artikulasi audio Veo 3.1)
 
 Kembali ke: [[Home]]
