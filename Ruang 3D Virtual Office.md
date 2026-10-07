@@ -50,4 +50,17 @@ systemctl --user stop ruang
 ruang access-code new
 ```
 
+---
+
+## 4. Troubleshooting Akses & Port Forwarding
+
+### Kendala `ERR_CONNECTION_RESET` di Browser
+Jika browser menampilkan pesan koneksi direset saat membuka `http://localhost:3001`:
+1. **Periksa Protokol URL**: Pastikan URL diketik lengkap dengan `http://` bukan `https://`. Browser modern sering kali memaksakan HTTPS secara otomatis, yang menyebabkan reset koneksi seketika saat diterima oleh port HTTP biasa.
+2. **Status Tunnel Termius**: Pastikan aturan forwarding di Termius sudah diaktifkan (toggle switch berwarna hijau/aktif). Menyimpan formulir tanpa mengaktifkan tunnel tidak akan membuka port lokal.
+3. **Verifikasi Host Intermediate**: Pastikan aturan port forwarding terhubung ke host server yang tepat (`IP: 43.133.158.228`, `Port: 2222`), bukan server lain yang tersimpan di Termius.
+4. **Gunakan Binding 127.0.0.1**: Jika `localhost` gagal di-resolve karena resolusi IPv6 `::1`, gunakan alamat eksplisit `http://127.0.0.1:3001`.
+
+---
+
 Kembali ke: [[Proyek]] | [[Pengetahuan]] | [[Home]]

@@ -4,7 +4,7 @@ Obsidian vault at ~/Documents/Obsidian Vault is synced to git@github.com:Ramadan
 §
 Standing rule: only document genuinely important technical setups, system architecture, crucial guides, or explicitly requested topics into Obsidian vault (~/Documents/Obsidian Vault) and git push. Do NOT document casual Q&A or minor conversation topics.
 §
-VPS infra: Ubuntu 24.04, 2GB RAM, firewalld (2222, 20128) & sshguard. Services via systemd: 9Router (20128), Mission Control (9000, ~/mission-control), Warranty Hub (9050, ~/warranty-hub, link.herama.my.id). Both Python HTTP servers use DualStackHTTPServer (IPv4/IPv6 '::' with IPV6_V6ONLY=0) to prevent Cloudflare Tunnel 502. Profiles: default (Fern), leadengineer, nara-marketer. Subagents: create kanban in_progress tasks so agents show Working in 2D Office, then mark done.
+Services via systemd: 9Router (20128), Ruang 3D Office (3001, ruang.service), Warranty Hub (9050, ~/warranty-hub, link.herama.my.id). Python HTTP servers use DualStackHTTPServer (IPv4/IPv6 '::' with IPV6_V6ONLY=0) to prevent Cloudflare Tunnel 502. Profiles: default (Fern), leadengineer, nara-marketer. Subagents: create kanban in_progress tasks so agents show Working in Office, then mark done.
 §
 HF Serverless Inference: HF_TOKEN set in .env with inference permission. Image generation via black-forest-labs/FLUX.1-schnell works fast and reliably.
 §
