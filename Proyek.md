@@ -22,14 +22,13 @@ Daftar proyek dan tugas yang sedang aktif.
   - Platform e-commerce otomatis penjualan akun premium (Midtrans QRIS + Supplier Premku API + GoWA WhatsApp gateway).
   - Web: https://premium.herama.my.id
   - Repo: https://github.com/Ramadani-coding/nara-appsV2
-- [x] **Mission Control AI Team MVP & 2D Visual Office**
-  - [x] Backend HTTP Server (`http.server` stdlib, port 9000, read-only SQLite `kanban.db` & `state.db`)
-  - [x] Managed via systemd service (`mission-control.service` auto-restart & boot start)
-  - [x] Cloudflare Tunnel & Cloudflare Access (`https://mission.herama.my.id`)
-  - [x] Mobile responsive overhaul (bottom nav, mobile 2D office viewport, auto cache-busting)
-  - [x] Frontend SPA dark mode 7 tab (Overview, Agents, 2D Visual Office, Task Board, Calendar, Activity, Memory)
-  - [x] Visual Office 2D pixel-art (Workspace 0 & Lounge room switching, automatic real data state mapping)
-  - [x] Integrasi OpenCode AI CLI & Nara Marketing Agent (`nara-marketer`) terhubung ke 9Router `combo-nara`
+- [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
+  - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
+  - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
+  - [x] Mode fallback 2D untuk browser ringan / mobile
+  - [x] Managed via systemd user service (`ruang.service` aktif di port 3001, linger enabled)
+  - [x] Fitur lengkap: Status agen real-time via `hermes` CLI, Kanban board, Calendar cronjob, Token usage insights, Folder & Memory inspector (SOUL.md/MEMORY.md), logs tailing, dan access code protection
+  - [x] Integrasi Hermes multi-profile (default, leadengineer, nara-marketer) & OpenCode CLI
 - [x] **Apple Quick-Hub Promotor Portal (`https://link.herama.my.id`)**
   - [x] Portal PWA mobile-first untuk link aktivasi, cek garansi AppleCare, IMEI Kemenperin & Bea Cukai
   - [x] Backend SQLite CRUD (`http.server` dual-stack port 9050, ~10MB RAM)

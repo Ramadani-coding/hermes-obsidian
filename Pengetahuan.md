@@ -14,6 +14,7 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Google Stitch MCP Integration|Google Stitch MCP]] (Integrasi desain UI/UX otomatis via Gemini 3 Pro dan Model Context Protocol)
 - [[Google Flow MCP]] (Integrasi studio video dan aset kreatif Veo 3.1 via Model Context Protocol)
 - [[Pacific Pedia SMM Integration]] (PRD dan arsitektur platform SMM Panel Next.js, Tailwind, Supabase, Prisma)
+- [[Ruang 3D Virtual Office]] (Arsitektur dan panduan operasional Hermes 3D Virtual Office & Mission Control)
 - [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]] (Panduan teknis konsistensi wajah, koreografi kamera, dan artikulasi audio Veo 3.1)
 
 Kembali ke: [[Home]]
