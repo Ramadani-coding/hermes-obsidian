@@ -1,22 +1,24 @@
 # Pacific Pedia SMM Integration PRD
 
-Dokumentasi rancangan produk, arsitektur teknis, dan skema database untuk platform otomasi SMM Panel berbasis **Pacific Pedia API v2.0**.
+Dokumentasi rancangan produk, arsitektur teknis, dan skema database untuk platform otomasi SMM Panel berbasis **Pacific Pedia API v2.0** dengan sistem **Deposit-Only** dan **Clerk Auth**.
 
-Tersimpan di: `/home/ubuntu/PRD-Pacific-Pedia-SMM.md`
+File spesifikasi lengkap: `/home/ubuntu/PRD-Pacific-Pedia-SMM.md`
 
 ---
 
-## Ringkasan Spesifikasi
+## Ringkasan Spesifikasi & Tech Stack
 - **Framework**: Next.js 15 App Router (Server Actions & Route Handlers)
-- **Styling**: Tailwind CSS
-- **Database & Auth**: Supabase PostgreSQL + Supabase Auth
+- **Styling**: Tailwind CSS & Shadcn UI
+- **Authentication**: **Clerk** (`@clerk/nextjs`) dengan webhook sinkronisasi user ke database lokal
+- **Database**: Supabase PostgreSQL dengan Row Level Security (RLS)
 - **ORM**: Prisma ORM (Port 6543 pooler untuk runtime, port 5432 direct untuk migrasi)
-- **Provider API**: Pacific Pedia API v2.0 (`/profile`, `/s2`)
-- **Payment**: QRIS Dinamis (Midtrans/Tripay) + Saldo Akun Member
+- **Payment Gateway**: **Midtrans Core API** (Strictly **QRIS Only** via `payment_type: "qris"`)
+- **Upstream Provider**: Pacific Pedia API v2.0 (`/profile`, `/s2`)
 
-## Fitur Utama
-1. **Direct Guest Checkout**: Pembeli bisa beli langsung via QRIS tanpa wajib daftar akun.
-2. **Member & Reseller Tier**: Diskon harga khusus bagi reseller dengan saldo deposit.
-3. **Auto Sync & Dynamic Margin**: Sinkronisasi katalog otomatis dengan margin profit terkontrol per kategori/layanan.
-4. **Order Dispatcher & Auto Polling**: Eksekusi instan ke API Pacific Pedia setelah bayar, plus polling status otomatis dan penanganan garansi refill.
-5. **Failover & Auto Refund**: Proteksi atomic transaksi jika saldo supplier kosong atau API gangguan.
+---
+
+## Aturan Bisnis & Arsitektur Inti
+1. **Pure Deposit-Based System**: Tidak ada *guest checkout*. Pengguna wajib login via Clerk dan memiliki saldo deposit aktif untuk memesan.
+2. **Deposit Strictly QRIS**: Pengisian saldo hanya melalui satu metode yaitu QRIS Dinamis dari Midtrans Core API (`/v2/charge`). Notifikasi webhook memvalidasi signature SHA512 dan menambah saldo secara otomatis melalui `prisma.$transaction`.
+3. **Atomic Order Execution**: Pemesanan memotong saldo akun secara instan. Jika API Pacific Pedia merespons error atau saldo supplier habis, sistem secara otomatis mengeksekusi *auto-refund* ke saldo akun pengguna.
+4. **Sinkronisasi Katalog & Rate**: Penanganan otomatis rate per 1.000 vs rate paket 1 dari Pacific Pedia dengan margin keuntungan dinamis.
