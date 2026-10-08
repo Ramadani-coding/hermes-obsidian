@@ -16,5 +16,6 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Pacific Pedia SMM Integration]] (PRD dan arsitektur platform SMM Panel Next.js, Tailwind, Supabase, Prisma)
 - [[Ruang 3D Virtual Office]] (Arsitektur dan panduan operasional Hermes 3D Virtual Office & Mission Control)
 - [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]] (Panduan teknis konsistensi wajah, koreografi kamera, dan artikulasi audio Veo 3.1)
+- [[The Agency Agents]] (Integrasi 282 AI agents specialist lintas 18 divisi via Hermes lazy-router plugin)
 
 Kembali ke: [[Home]]
