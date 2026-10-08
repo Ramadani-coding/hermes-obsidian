@@ -2,6 +2,11 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-10-08
+- Integrasi The Agency agents plugin (`agency-agents-router`) dengan 282 agen spesialis di 18 divisi (`~/agency-agents`), menambahkan perkakas `agency_agents_search`, `agency_agents_inspect`, `agency_agents_load`, dan `agency_agents_delegate` pada Hermes Agent (didokumentasikan di [[The Agency Agents]]).
+- Eksperimen produksi video iklan vertikal AI Google Flow (Veo 3.1) untuk promosi Canva Pro [[Nara Premium]]: isolasi halusinasi layar casing luar laptop via negative constraint, identifikasi batas durasi 8 detik (pacing 12-15 kata), perumusan teknik transisi *Cut on Action* 2-klip, dan standarisasi SOP Petunjuk Agen (didokumentasikan di [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]]).
+- Sinkronisasi cadangan identitas dan memori jangka panjang Fern (`SOUL.md`, `USER.md`, `MEMORY.md`) ke folder `Ingatan Fern/` di Obsidian Vault dan repositori GitHub.
+
 ## 2026-10-07
 - Replatforming arsitektur visual office dari Python stdlib `http.server` port 9000 ke [[Ruang 3D Virtual Office]] (`yugienugraha/ruang` di port 3001). Dashboard visual 3D interaktif 2 lantai berbasis Express 5, React 19, dan React Three Fiber untuk pemantauan realtime agen Hermes dan OpenCode. Mengamankan akses via Termius Local Port Forwarding port 2222 -> `127.0.0.1:3001`.
 - Penyusunan PRD komprehensif platform otomasi SMM Panel berbasis Pacific Pedia API v2.0 (`/home/ubuntu/PRD-Pacific-Pedia-SMM.md`) dan pembaruan arsitektur ke model pure deposit-based system dengan Clerk Authentication (`@clerk/nextjs`), deposit strictly QRIS dinamis via Midtrans Core API (`/v2/charge`), serta proteksi transaksi atomik auto-refund pada Prisma ORM & Supabase PostgreSQL (didokumentasikan di [[Pacific Pedia SMM Integration]]).
