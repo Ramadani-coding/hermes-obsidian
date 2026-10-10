@@ -17,5 +17,6 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Ruang 3D Virtual Office]] (Arsitektur dan panduan operasional Hermes 3D Virtual Office & Mission Control)
 - [[Panduan Prompting dan Konsistensi Video AI Veo (Google Flow)]] (Panduan teknis konsistensi wajah, koreografi kamera, dan artikulasi audio Veo 3.1)
 - [[The Agency Agents]] (Integrasi 282 AI agents specialist lintas 18 divisi via Hermes lazy-router plugin)
+- [[Integrasi Codebase Knowledge Graph (Graphify) dan Antigravity]] (Pemetaan arsitektur basis kode via AST Tree-sitter deterministik lokal dan mitigasi lingkungan dev Windows)
 
 Kembali ke: [[Home]]
