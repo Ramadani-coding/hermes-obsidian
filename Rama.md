@@ -11,7 +11,7 @@ Profil pengguna / pemilik vault.
 ## Minat & Keterampilan
 - **Teknologi & AI:** Coding dan eksplorasi teknologi AI.
 - **Hardware:** Bongkar-pasang laptop, perakitan PC, dan servis printer dasar.
-- **Hiburan:** Menonton film di Netflix.
+- **Hiburan:** Menonton film di Netflix dan bermain game (Valorant di PC Windows).
 
 ## Tautan Terkait
 - Asisten: [[Fern]]

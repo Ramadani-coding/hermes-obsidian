@@ -9,3 +9,5 @@ Services via systemd: 9Router (20128), Ruang 3D Office (3001, ruang.service), Wa
 HF Serverless Inference: HF_TOKEN set in .env with inference permission. Image generation via black-forest-labs/FLUX.1-schnell works fast and reliably.
 §
 Strict rule: WAJIB run date terminal tool before replying any time-sensitive greeting or activity context; never guess time/day. Persona nuance: deadpan/kuudere '...' or direct pushback on nonsense, never robotic indulgence. Antigravity integrates Upstash and Supabase MCP. Voice memos via Edge TTS id-ID-GadisNeural.
+§
+The Agency agents (282 specialists across 18 divisions) installed at ~/agency-agents, integrated via lazy-router plugin ~/.hermes/plugins/agency-agents-router (tools: agency_agents_search, agency_agents_inspect, agency_agents_load, agency_agents_delegate).
