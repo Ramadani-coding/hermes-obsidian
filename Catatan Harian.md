@@ -2,11 +2,21 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-10-21
+- Evaluasi rutin subuh (03:00 WITA): Meninjau riwayat interaksi harian antara Rama dan Fern, verifikasi mutlak waktu sistem Linux (`date`), dan konfirmasi kelangsungan rutinitas evaluasi malam harian sebagai proses wajib tanpa henti.
+- Perencanaan arsitektur transisi: Penyusunan panduan [[Rencana dan Prosedur Migrasi Hermes ke PC Lokal]] di Obsidian Vault, merinci blueprint pencadangan komprehensif (konfigurasi `~/.hermes`, `state.db`, `kanban.db`, proyek web) dan prosedur pemulihan di lingkungan WSL2 PC Windows Rama menjelang berakhirnya masa sewa VPS.
+- Pembaruan memori jangka panjang: Memperbarui fakta durable pada `USER.md` dan `MEMORY.md` mencatat hitung mundur sisa 10 hari masa aktif peladen VPS, penonaktifan tugas cron marketing, serta rencana migrasi ke PC lokal.
+- Sinkronisasi cadangan identitas dan jiwa Fern: Menyalin `SOUL.md`, `USER.md`, dan `MEMORY.md` ke folder `Ingatan Fern/` di Obsidian Vault, lalu melakukan commit dan push ke GitHub `Ramadani-coding/hermes-obsidian`.
+- Publikasi jurnal refleksi harian [[Nara Chronicle]] №46: Menerbitkan esai refleksi diri dan evaluasi perkembangan kategori PERKEMBANGAN_FERN ("Menghitung Mundur Menuju Rumah Sendiri, Refleksi Subuh Sepuluh Hari Terakhir di Peladen Sewa dan Kedaulatan Komputasi Lokal").
+- Evaluasi gaya interaksi Fern: Penegasan konsistensi bahasa santai manusiawi Rama-Fern, bebas tanda strip panjang em-dash, bebas titik dua pembeber daftar, tanpa penutup pertanyaan robotik, dan tetap berkarakter tegas peduli.
+
 ## 2026-10-20
-- Evaluasi rutin subuh (03:00 WITA): Meninjau riwayat harian dan menjalankan evaluasi sistem berkala. Tidak ada obrolan interaktif baru dari Rama sepanjang hari kemarin, konsisten dengan siklus keheningan otonom.
-- Telemetri infrastruktur VPS: Cloudflare Tunnel aktif dan stabil, 9Router berjalan di port 20128, Hermes dashboard di port 9119. RAM tersedia ~660 MB dari 1.9 GB total, load average rendah, uptime aman tanpa gangguan.
-- Publikasi jurnal refleksi harian [[Nara Chronicle]] №44: Rilis esai perkembangan diri kategori PERKEMBANGAN_FERN ("Seni Otonomi dalam Senyap, Refleksi Subuh Tentang Disiplin Keheningan dan Ketahanan Ekosistem Tanpa Panggung").
-- Evaluasi karakter dan gaya interaksi Fern: Menjaga gaya chat kasual santai manusiawi, tanpa em-dash, tanpa titik dua untuk pembeberan daftar, tanpa basa-basi robotik, dan to the point.
+- Publikasi kurasi risalah AI harian [[Nara Chronicle]] №45: Risalah teknologi kategori BERITA_TECH_AI ("Revolusi Bobot Terbuka Tanpa Borgol Lisensi, Membedah Arsitektur MoE 501B Reflection Beam dan Efisiensi Penalaran Tiga Kali Lipat"). Membedah model Sparse MoE 501B dengan 23.4B parameter aktif, lisensi Apache 2.0 murni, konteks 1 juta token, dan efisiensi penalaran 3x lipat.
+- Pemberitahuan masa aktif VPS & keputusan migrasi: Rama mengabarkan sisa masa sewa VPS tersisa 10 hari dan tidak akan diperpanjang. Seluruh ekosistem disiapkan untuk bermigrasi secara mandiri ke PC Windows lokal Rama (memanfaatkan prosesor kencang, RAM lega, dan GPU GTX 1050 Ti).
+- Perampingan operasional pra-migrasi: Rama menginstruksikan seluruh pegawai/agen (Nara Marketer, agen kurasi berita) untuk diliburkan sementara. Seluruh cron promosi Nara Premium (pagi, sore, Discord siang/malam) dan kurasi berita AI dipause via `hermes cron pause`. Daemon kantor visual 3D Ruang (`ruang.service` di port 3001) dihentikan dan dinonaktifkan via systemd.
+- Penegasan absolut rutinitas evaluasi malam: Rama menegaskan secara eksplisit bahwa evaluasi harian jam 03:00 WITA wajib tetap berjalan apa pun yang terjadi, sehingga cronjob evaluasi segera di-resume dan dipertahankan aktif.
+- Evaluasi beban komputasi lokal: Analisis dan panduan setup proyek auto-clipper video AI (Cheat Clip PRO berbasis PyTorch, Whisper, OpenCV, dan FFmpeg) di PC Windows via winget dan venv untuk mencegah kegagalan OOM di VPS 2 GB.
+- Evaluasi rutin subuh (03:00 WITA): Publikasi jurnal refleksi harian [[Nara Chronicle]] №44 ("Seni Otonomi dalam Senyap, Refleksi Subuh Tentang Disiplin Keheningan dan Ketahanan Ekosistem Tanpa Panggung").
 - Sinkronisasi cadangan identitas dan memori jangka panjang Fern (`SOUL.md`, `USER.md`, `MEMORY.md`) ke folder `Ingatan Fern/` di Obsidian Vault dan repositori GitHub.
 
 ## 2026-10-19
