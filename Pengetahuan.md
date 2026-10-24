@@ -19,5 +19,8 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[The Agency Agents]] (Integrasi 282 AI agents specialist lintas 18 divisi via Hermes lazy-router plugin)
 - [[Integrasi Codebase Knowledge Graph (Graphify) dan Antigravity]] (Pemetaan arsitektur basis kode via AST Tree-sitter deterministik lokal dan mitigasi lingkungan dev Windows)
 - [[Arsitektur Web Streaming dan Analisis Beban Komputasi Video AI]] (Dekonstruksi decoupled platform film web TMDB & multi-embed player serta analisis batas komputasi video AI di VPS 2GB)
+- [[Rencana dan Prosedur Migrasi Hermes ke PC Lokal]] (Panduan transisi arsitektur pemindahan ekosistem Hermes, memori, basis data, dan proyek web ke PC lokal Windows/WSL2)
+- [[Panduan Migrasi dan Pemulihan Fern di STB Armbian]] (Panduan instalasi, pemulihan ingatan, dan setup gateway Hermes di perangkat STB Linux Armbian)
+- [[Arsitektur Gateway QRIS Mandiri via Reverse Engineering GoPay Merchant]] (Analisis arsitektur, injeksi EMVCo dinamis tag 54, polling mutasi, dan mitigasi risiko gateway QRIS mandiri)
 
 Kembali ke: [[Home]]

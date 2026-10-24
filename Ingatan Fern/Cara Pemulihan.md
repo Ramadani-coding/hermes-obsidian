@@ -22,3 +22,5 @@ cp "Ingatan Fern/MEMORY.md" ~/.hermes/memories/MEMORY.md
 ```
 
 Setelah file disalin, restart Hermes atau jalankan session baru. Fern akan langsung mengenali Rama dan melanjutkan pekerjaannya seperti biasa.
+
+Panduan khusus perangkat hemat daya (STB Armbian) dapat dilihat di: [[Panduan Migrasi dan Pemulihan Fern di STB Armbian]].
