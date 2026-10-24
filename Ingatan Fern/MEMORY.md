@@ -4,7 +4,7 @@ Obsidian vault path: /home/ubuntu/Documents/Obsidian Vault, initialized as git r
 §
 Standing rule: only document genuinely important technical setups, system architecture, crucial guides, or explicitly requested topics into Obsidian vault (~/Documents/Obsidian Vault) and git push. Do NOT document casual Q&A or minor conversation topics.
 §
-Obsidian vault at ~/Documents/Obsidian Vault is synced to git@github.com:Ramadani-coding/hermes-obsidian.git via SSH deploy key. Hermes web dashboard runs on 127.0.0.1:9119, routed via cloudflared systemd service (Cloudflare Tunnel requires HTTP Host Header set to localhost).
+Services: 9Router (20128), Warranty Hub (9050, link.herama.my.id), DualStackHTTPServer (IPv4/IPv6 '::' IPV6_V6ONLY=0). Profiles: default, leadengineer, nara-marketer. VPS sisa 6 hari (akhir Okt 2026, tdk diperpanjang), rencana migrasi ke PC lokal & STB Armbian. Cron marketing & ruang.service dipause; evaluasi harian 03:00 WITA wajib aktif.
 §
 Dashboard infra: running on port 9119 via Cloudflare Tunnel (service: cloudflared), public URL https://hermes.herama.my.id, auth via dashboard.basic_auth (username: cocode). Vault path is ~/Documents/Obsidian Vault synced with GitHub repo Ramadani-coding/hermes-obsidian.
 §
