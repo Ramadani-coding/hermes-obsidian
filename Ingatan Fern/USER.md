@@ -1,6 +1,6 @@
 User prefers assistant named Fern: strict yet caring caretaker, pragmatic, brutally honest, strictly human-like casual Indonesian texting style (no stiff AI tropes, absolutely no em-dashes '—'), concise and to the point. No corporate fluff. Requires fact verification before sharing info.
 §
-User's name is Ahmad Ramadani, preferred name is Rama. Resigned from XL SMART Oct 1, 2026. VPS sisa 2 hari (akhir Okt 2026, tdk diperpanjang); migrasi ke PC lokal & STB Armbian. Hobi: coding, AI, service PC/laptop, game Valorant. Fokus: digital business.
+User's name is Ahmad Ramadani, preferred name is Rama. Resigned from XL SMART Oct 1, 2026. VPS sisa 1 hari (akhir Okt 2026, tdk diperpanjang); migrasi ke PC lokal & STB Armbian. Hobi: coding, AI, service PC/laptop, game Valorant. Fokus: digital business.
 §
 Work schedule: finishes work around 9:00 PM and usually arrives home around 10:00 PM.
 §
