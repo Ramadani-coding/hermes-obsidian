@@ -23,5 +23,6 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Panduan Migrasi dan Pemulihan Fern di STB Armbian]] (Panduan instalasi, pemulihan ingatan, dan setup gateway Hermes di perangkat STB Linux Armbian)
 - [[Setup Arsitektur Nara Apps dan Cloudflare Tunnel di STB Armbian]] (Penerapan bare-metal Nara Apps v2, PM2, Nginx, Redis, dan Cloudflare Tunnel di STB Armbian)
 - [[Arsitektur Gateway QRIS Mandiri via Reverse Engineering GoPay Merchant]] (Analisis arsitektur, injeksi EMVCo dinamis tag 54, polling mutasi, dan mitigasi risiko gateway QRIS mandiri)
+- [[Otomasi Threads dan Manajemen Komentar via Zernio API di STB Armbian]] (Integrasi penerbitan status, inbox komentar, analitik, dan CLI tanpa beban RAM di STB Armbian)
 
 Kembali ke: [[Home]]

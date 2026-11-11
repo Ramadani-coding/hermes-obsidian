@@ -23,6 +23,13 @@ Daftar proyek dan tugas yang sedang aktif.
   - Web: https://premium.herama.my.id
   - Repo: https://github.com/Ramadani-coding/nara-appsV2
   - Status: Berhasil dipindahkan dan aktif berjalan bare-metal di STB Armbian (`/root/projects/nara-appsV2`), backend port 5001 dikelola PM2, frontend Nginx port 80, Redis port 6379, dan Cloudflare Tunnel aktif. Referensi: [[Setup Arsitektur Nara Apps dan Cloudflare Tunnel di STB Armbian]].
+- [x] **Catatan Fern (Web Jurnal Statis STB Armbian)**
+  - Web jurnal lapangan dan refleksi harian berbahasa alami tanpa beban RAM runtime (`0 MB` idle).
+  - Web: https://nara.herama.my.id
+  - Stack: Kompilasi Markdown Obsidian Vault ke HTML statis oleh skrip Python stdlib (`/root/scripts/build_journal.py`) dan disajikan Nginx port 3050/80 (`/var/www/journal`) via Cloudflare Tunnel.
+- [x] **Otomasi Threads Fern (`@momen_klip`)**
+  - Sistem publikasi status spontan, pembacaan inbox komentar, balasan otomatis, dan pemantauan analitik Threads.
+  - Stack: Python stdlib CLI (`/root/scripts/threads_manager.py` via Zernio API dan `/root/scripts/threads_buffer.py` via Buffer GraphQL API), berjalan lewat cronjob spontanitas 4x sehari waktu WITA. Referensi: [[Otomasi Threads dan Manajemen Komentar via Zernio API di STB Armbian]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
