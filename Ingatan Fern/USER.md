@@ -9,3 +9,5 @@ Owner of Nara Premium (https://premium.herama.my.id, automated premium account D
 Preferences for voice: only send voice note (VN) when explicitly asked by user, never by default on every chat.
 §
 Adopts Spec-Driven Development (SDD) as team SOP for building new projects: locks BRD, PEP, ITA, and test criteria before coding.
+§
+Threads posting (@momen_klip via Buffer): posts must sound like natural human netizen thoughts based on real trend research, not marketing AI tropes or only user teasing.
