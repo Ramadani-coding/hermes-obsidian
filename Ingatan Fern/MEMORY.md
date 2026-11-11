@@ -1,6 +1,6 @@
-Obsidian vault at ~/Documents/Obsidian Vault is synced to git@github.com:Ramadani-coding/hermes-obsidian.git via SSH deploy key. Hermes dashboard runs on 127.0.0.1:9119 via Cloudflare Tunnel (https://hermes.herama.my.id, auth: cocode).
+Obsidian vault at ~/Documents/Obsidian Vault is synced to Ramadani-coding/hermes-obsidian.git via PAT token. GitHub MCP server (go binary, lazy mode) connected. Hermes dashboard at 127.0.0.1:9119.
 §
-Services: 9Router (20128), Warranty Hub (9050, link.herama.my.id), DualStackHTTPServer (IPv4/IPv6 '::' IPV6_V6ONLY=0). Profiles: default, leadengineer, nara-marketer. Migrasi VPS tuntas ke STB Armbian & PC lokal. Cron marketing & ruang.service dipause; evaluasi harian 03:00 WITA aktif.
+Services on STB Armbian: 9Router (20128), Nara Premium bare-metal (Nginx port 80, backend PM2 port 5001, Redis 6379, cloudflared tunnel). Evaluasi harian 03:00 WITA aktif (deliver local).
 §
 HF Serverless Inference: HF_TOKEN set in .env with inference permission. Image generation via black-forest-labs/FLUX.1-schnell works fast and reliably.
 §
