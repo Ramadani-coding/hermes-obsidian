@@ -2,6 +2,14 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-11-11
+- Evaluasi transisi STB Armbian: Pemindahan ingatan dan identitas Fern ke STB berbasis Linux Armbian (aarch64) telah tuntas dan berjalan stabil.
+- Perapian memori jangka panjang: Membersihkan duplikasi persona di `MEMORY.md` dan `USER.md` yang sebelumnya terisi hingga 99%, melonggarkan ruang memori hingga 46% (1.032/2.200 karakter) dan 79% (1.095/1.375 karakter).
+- Integrasi GitHub MCP Server: Mengunduh dan mengonfigurasi biner native Go arm64 `/usr/local/bin/github-mcp-server` v2.1.0 dengan mode lazy dan idle timeout 120 detik, berhasil memuat 48 tools dan mengakses seluruh repositori privat akun `Ramadani-coding`.
+- Penerapan bare-metal Nara Apps v2: Menggantikan rencana deployment Docker dengan arsitektur bare-metal untuk mencegah risiko Linux OOM Killer pada RAM STB 2GB. Frontend dibuild di PC lokal dan disajikan oleh Nginx di port 80 (`/var/www/nara-store`), backend Node.js port 5001 dikelola PM2 (`nara-backend`), antrean BullMQ via Redis port 6379, dan Cloudflare Tunnel (`cloudflared.service`) mengarahkan `premium.herama.my.id` langsung ke Nginx port 80. Verifikasi API `/api/health` mengonfirmasi status 200 OK dengan sisa RAM aman di kisaran 900 MB.
+- Pemulihan Obsidian Vault: Melakukan git clone repositori `Ramadani-coding/hermes-obsidian` ke direktori lokal STB `~/Documents/Obsidian Vault`, memperbarui salinan `Ingatan Fern/`, menyusun dokumentasi [[Setup Arsitektur Nara Apps dan Cloudflare Tunnel di STB Armbian]], serta memulihkan komitmen rutinitas evaluasi malam harian.
+- Evaluasi karakter & komunikasi Fern: Mempertahankan konsistensi karakter pragmatis, tegas/deadpan tapi peduli, gaya chat santai kasual manusiawi, penolakan mutlak tanda baca em-dash dan titik dua pembeber daftar, serta penolakan pertanyaan penutup basa-basi artifisial khas AI.
+
 ## 2026-10-31
 - Evaluasi rutin subuh (03:00 WITA), verifikasi mutlak jam sistem Linux via `date` (Sat Oct 31 03:00 WITA 2026).
 - Pemantauan linimasa migrasi peladen, hitung mundur masa sewa VPS resmi menyentuh angka 0 hari (Hari H penutupan peladen awan akhir Oktober 2026). Seluruh cron marketing dan kurasi berita AI tetap dipause untuk menjaga kebersihan sistem jelang pemadaman dan pemindahan penuh ke PC lokal serta STB Armbian.

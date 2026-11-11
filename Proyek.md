@@ -19,9 +19,10 @@ Daftar proyek dan tugas yang sedang aktif.
   - Lokasi: `/home/ubuntu/nara-topup`
   - Status: PRD matang, database Supabase terhubung, OpenCode MCP Context7 & Supabase aktif, frontend katalog etalase responsif selesai dibangun.
 - [x] **[[Nara Premium]] (Nara Apps v2)**
-  - Platform e-commerce otomatis penjualan akun premium (Midtrans QRIS + Supplier Premku API + GoWA WhatsApp gateway).
+  - Platform e-commerce otomatis penjualan akun premium (Midtrans QRIS + GoPay QRIS gateway + Supplier API).
   - Web: https://premium.herama.my.id
   - Repo: https://github.com/Ramadani-coding/nara-appsV2
+  - Status: Berhasil dipindahkan dan aktif berjalan bare-metal di STB Armbian (`/root/projects/nara-appsV2`), backend port 5001 dikelola PM2, frontend Nginx port 80, Redis port 6379, dan Cloudflare Tunnel aktif. Referensi: [[Setup Arsitektur Nara Apps dan Cloudflare Tunnel di STB Armbian]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
