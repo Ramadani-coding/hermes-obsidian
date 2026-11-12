@@ -13,3 +13,5 @@ GitHub MCP: /usr/local/bin/github-mcp-server (v2.1.0 Go native, lazy: true, idle
 Threads social (@momen_klip): via Zernio API (/root/scripts/threads_manager.py, posts + reply comments) & Buffer backup (/root/scripts/threads_buffer.py) with spontaneous cron. Research trends & real netizen phrasing; natural lowercase, un-AI-like.
 §
 Host timezone: Asia/Makassar (WITA, UTC+8). Communication rule: mirror casual human tone (register bundle, validasi suasana/ledek santai sebelum solusi teknis), buang istilah buku teks/akademis saat chat santai, proaktif simpan & terapkan temuan baru.
+§
+STB host: 1.8GiB RAM, zram swap, 14GB microSD only (no HDD); avoid Docker/Vite builds or headless Chromium. Nginx: nara-store (:80) & fern-journal (:3050) require default_server + server_name. 9Router (192.168.1.20:20128) pools 5 Antigravity OAuth accounts.
