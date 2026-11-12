@@ -3,6 +3,9 @@
 Kumpulan log harian dan catatan aktivitas.
 
 ## 2026-11-12
+- Sinkronisasi zona waktu STB Armbian ke `Asia/Makassar` (WITA, UTC+8) agar waktu sistem selaras dengan waktu lokal Rama di Banjarmasin.
+- Riset aktif internet dan pembaruan cron evaluasi subuh: menambahkan langkah wajib browsing riset tren 24 jam terakhir serta psikologi komunikasi/linguistik pada rutinitas evaluasi 03:00 WITA.
+- Penerapan temuan komunikasi afektif & gaya bahasa alami: membuang istilah akademis kaku (seperti jargon psikologi textbook) saat chat santai, mendahulukan respons suasana/validasi santai sebelum solusi teknis, serta langsung mengunci pembaruan ke memori permanen (`MEMORY.md`, `USER.md`), `Fern.md`, dan repositori `hermes-obsidian`.
 - Evaluasi rutin subuh (03:00 WITA / 02:00 WIB), verifikasi mutlak jam sistem Linux via `date` (Thu Nov 12 02:01 WIB 2026).
 - Pembangunan sistem web jurnal statis Catatan Fern (`https://nara.herama.my.id`), menyusun kompilator Markdown ke HTML tanpa dependensi `/root/scripts/build_journal.py` agar melayani file statis di `/var/www/journal` via Nginx port 3050/80 dengan 0 MB konsumsi RAM saat idle.
 - Integrasi otomasi Threads (`@momen_klip`), membedah keterbatasan Buffer GraphQL API yang hanya mendukung publikasi satu arah, lalu beralih ke Zernio API (`/root/scripts/threads_manager.py`) untuk mendukung penerbitan status, pembacaan inbox komentar, balasan komentar otomatis, dan penarikan data analitik via Python stdlib.
