@@ -30,6 +30,9 @@ Daftar proyek dan tugas yang sedang aktif.
 - [x] **Otomasi Threads Fern (`@momen_klip`)**
   - Sistem publikasi status spontan, pembacaan inbox komentar, balasan otomatis, dan pemantauan analitik Threads.
   - Stack: Python stdlib CLI (`/root/scripts/threads_manager.py` via Zernio API dan `/root/scripts/threads_buffer.py` via Buffer GraphQL API), berjalan lewat cronjob spontanitas 4x sehari waktu WITA. Referensi: [[Otomasi Threads dan Manajemen Komentar via Zernio API di STB Armbian]].
+- [x] **Integrasi YouTube Channel Manager (`@rammadan_code`)**
+  - Pengelolaan channel YouTube Rama (playlist, update judul/deskripsi video, statistik) via YouTube Data API v3 OAuth 2.0.
+  - Stack: Python stdlib CLI (`/root/scripts/youtube_manager.py`), auto-refresh token, 0 MB memory idle. Referensi: [[Integrasi YouTube Channel Manager via OAuth 2.0 di STB Armbian]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
