@@ -52,6 +52,8 @@ Daftar proyek dan tugas yang sedang aktif.
   - Referensi teknis: [[Audit Keamanan VPS]]
 
 ## Eksplorasi & Proyek Lanjutan
+- [ ] **Modding Game Bahasa Indonesia (Caravan SandWitch, Thief Simulator, Borderlands 2)**
+  - Pelokalan bahasa Indonesia game: Caravan SandWitch (selesai tayang di GitHub), antrean Thief Simulator (Unity StreamingAssets), dan Borderlands 2 (Unreal Engine 3 WillowGame .int files).
 - [ ] **Optimasi Model Routing & Fallback (9Router)**
   - Pengaturan Round Robin fallback Gemini Pro via Antigravity OAuth.
 - [ ] **Pengembangan & Karakter Asisten Hermes**

@@ -24,5 +24,6 @@ Repositori referensi, cheatsheet, dan ringkasan materi teknis.
 - [[Setup Arsitektur Nara Apps dan Cloudflare Tunnel di STB Armbian]] (Penerapan bare-metal Nara Apps v2, PM2, Nginx, Redis, dan Cloudflare Tunnel di STB Armbian)
 - [[Arsitektur Gateway QRIS Mandiri via Reverse Engineering GoPay Merchant]] (Analisis arsitektur, injeksi EMVCo dinamis tag 54, polling mutasi, dan mitigasi risiko gateway QRIS mandiri)
 - [[Otomasi Threads dan Manajemen Komentar via Zernio API di STB Armbian]] (Integrasi penerbitan status, inbox komentar, analitik, dan CLI tanpa beban RAM di STB Armbian)
+- [[Panduan Prompting Thumbnail YouTube Gaming Berbasis AI]] (Standar formula prompt, komposisi seluler, rim light, safe zone, dan template genre YouTube gaming)
 
 Kembali ke: [[Home]]
