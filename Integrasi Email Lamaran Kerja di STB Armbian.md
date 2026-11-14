@@ -6,7 +6,9 @@ Integrasi manajemen akun email profesional Rama (`ahmadramadani.work@gmail.com`)
 
 1. **IMAP SSL (Port 993 - Port Terbuka)**:
    - Digunakan untuk membaca inbox, mencari email masuk, memeriksa notifikasi keamanan/interview, dan membuat draf email langsung ke folder `[Gmail]/Draf`.
-   - Menggunakan App Password akun Google (`khkk ctgm zdes zosd`) yang tersimpan aman di `/root/.hermes/email_config.json` (chmod 600).
+   - Skrip Eksekutor: `/root/scripts/email_manager.py`
+- Lokasi CV PDF Tersimpan: `/root/documents/cv/CV_Ahmad_Ramadani.pdf`
+- Kredensial App Password: `/root/.hermes/email_config.json` (chmod 600)
 
 2. **Pengiriman Email via Gmail API (Port 443 HTTPS)**:
    - Mayoritas ISP rumahan di Indonesia (IndiHome/Telkom) memblokir port outbound SMTP (25, 465, 587) untuk mencegah spam botnet.
