@@ -33,6 +33,9 @@ Daftar proyek dan tugas yang sedang aktif.
 - [x] **Integrasi YouTube Channel Manager (`@rammadan_code`)**
   - Pengelolaan channel YouTube Rama (playlist, update judul/deskripsi video, statistik) via YouTube Data API v3 OAuth 2.0.
   - Stack: Python stdlib CLI (`/root/scripts/youtube_manager.py`), auto-refresh token, 0 MB memory idle. Referensi: [[Integrasi YouTube Channel Manager via OAuth 2.0 di STB Armbian]].
+- [x] **Mod Subtitle & UI Bahasa Indonesia Game Thief Simulator**
+  - Menerjemahkan 1.664 baris teks game Steam Thief Simulator (Unity StreamingAssets SoLocalization) ke Bahasa Indonesia natural.
+  - Tersedia paket zip siap pasang di `https://nara.herama.my.id/Thief_Simulator_Mod_Indo.zip`. Referensi: [[Mod Bahasa Indonesia Thief Simulator (Unity StreamingAssets SoLocalization)]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
