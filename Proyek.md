@@ -40,6 +40,10 @@ Daftar proyek dan tugas yang sedang aktif.
 - [x] **Manajemen Email Lamaran Kerja (`ahmadramadani.work@gmail.com`)**
   - Pemantauan inbox, pencarian panggilan interview, pembuatan draf surat lamaran kerja via IMAP SSL & Gmail API.
   - Stack: Python stdlib CLI (`/root/scripts/email_manager.py`), 0 MB memory idle. Referensi: [[Integrasi Email Lamaran Kerja di STB Armbian]].
+- [x] **Otomasi Riset Loker & Auto-Draft Lamaran Harian (08:00 WITA)**
+  - Riset lowongan kerja harian di Banjarbaru & Banjarmasin yang relevan (Teknisi IT/Komputer, Admin, Store Crew, Promotor).
+  - Verifikasi keaslian ketat (anti-scam, wajib ada email resmi).
+  - Otomatis membuat draf surat lamaran kerja di Gmail lengkap dengan attachment PDF CV canonical dan lapor ke Telegram tiap pukul 08:00 WITA. Referensi: [[Riset Loker Harian dan Otomasi Draft Lamaran]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
