@@ -35,7 +35,8 @@ Daftar proyek dan tugas yang sedang aktif.
   - Stack: Python stdlib CLI (`/root/scripts/youtube_manager.py`), auto-refresh token, 0 MB memory idle. Referensi: [[Integrasi YouTube Channel Manager via OAuth 2.0 di STB Armbian]].
 - [x] **Mod Subtitle & UI Bahasa Indonesia Game Thief Simulator**
   - Menerjemahkan 1.664 baris teks game Steam Thief Simulator (Unity StreamingAssets SoLocalization) ke Bahasa Indonesia natural.
-  - Tersedia paket zip siap pasang di `https://nara.herama.my.id/Thief_Simulator_Mod_Indo.zip`. Referensi: [[Mod Bahasa Indonesia Thief Simulator (Unity StreamingAssets SoLocalization)]].
+  - Repo GitHub: https://github.com/Ramadani-coding/ThiefSimulator-Indonesian-Mod
+  - Rilis v1.0.0 siap unduh: `https://github.com/Ramadani-coding/ThiefSimulator-Indonesian-Mod/releases/latest`. Referensi: [[Mod Bahasa Indonesia Thief Simulator (Unity StreamingAssets SoLocalization)]].
 - [x] **Ruang (Hermes 3D & 2D Virtual Office & Mission Control)**
   - [x] Replatforming dari mission-control Python ke `yugienugraha/ruang` (Node.js Express + React 19 + Three.js / React Three Fiber)
   - [x] Kantor visual 3D interaktif 2 lantai (Lantai 1 ruang kerja, meeting, pantry, gerobak bakso/kopi keliling; Lantai 2 kamar tidur istirahat agen idle)
