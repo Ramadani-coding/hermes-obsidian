@@ -12,4 +12,4 @@ Adopts Spec-Driven Development (SDD) as team SOP for building new projects: lock
 §
 Threads (@momen_klip via Zernio/Buffer): posts & comment replies must sound like natural human netizen thoughts based on real trend research, not AI marketing tropes or only user teasing.
 §
-Tip/support page: https://tako.id/ramacode. Published CaravanSandWitch-Indonesian-Mod on GitHub.
+CV: /root/documents/cv/CV_Ahmad_Ramadani.pdf. Email: ahmadramadani.work@gmail.com (Fern drafts with CV, Rama sends).

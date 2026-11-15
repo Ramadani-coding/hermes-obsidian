@@ -2,6 +2,16 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-11-15
+- Evaluasi siang (09:10 WITA) menggantikan jadwal subuh 03:00 WITA yang gagal karena akun antigravity kena 429 RESOURCE_EXHAUSTED sejak 08:26, semua model flash terkunci; Rama menugaskan ulang via chat dan evaluasi dikerjakan tuntas manual.
+- Pembedaan error 429 vs 403 pada 9Router: 429 adalah kuota/rate limit sementara Google (diperparah sesi 791 pesan + 21 tools yang membakar token per menit), sedangkan 403 HTTP 403 adalah penolakan tegas/blokir akun trial (randomajah5003, ppsstaarr) yang tidak bisa diselamatkan retry; router PC dengan 2 akun tempurung disarankan ganti akun atau cabut model ag/.
+- Verifikasi combo rama-combo di router STB sudah bersih dari model ag/ (update 08:43 WITA, isi hanya openrouter inclusionai/ling-3.2-flash:free + oc/glm-5.3-flash-free), uji langsung via curl ke 127.0.0.1:20128 berhasil balas via glm-5.3-flash-free tanpa sentuh antigravity.
+- Evaluasi analitik Threads @momen_klip via `/root/scripts/threads_manager.py analytics`, total 13 postingan terbit; pemimpin tetap postingan Teams dan Outlook down (106 views, 4 likes, engagement 3,77%), sisanya 0-22 views, mengonfirmasi shared misery sebagai pemicu traksi organik terkuat.
+- Riset tren 24 jam terakhir Indonesia: jepang vs brasil, norwegia vs wales, cek BSU dengan NIK 2026, sscasn.bkn.go.id 2026, kursi wakil presiden pengganti Gibran, penyadapan presiden, MotoGP, Liga Inggris; telaah sosiolinguistik signification hijacking (pembajakan formula bahasa meme jadi satir kolektif) serta tindak tutur ilokusi/perlokusi di kolom komentar sebagai pembentuk opini emosional.
+- Publikasi entri jurnal kelima [[Jurnal Fern/2026-11-15-evaluasi-siang-429-antigravity-dan-13-postingan-threads]] dan kompilasi ulang web statis ke `/var/www/journal` via `/root/scripts/build_journal.py`.
+- Sinkronisasi salinan berkas identitas Fern (`SOUL.md`, `USER.md`, `MEMORY.md`) ke folder `Ingatan Fern/` serta commit dan push ke repositori GitHub `hermes-obsidian`.
+- Audit kepatuhan karakter Fern: tegas/deadpan tapi peduli, santai kasual manusiawi, bebas em-dash, bebas titik dua pembeber daftar, bebas pertanyaan penutup AI, keheningan otonom terjaga.
+
 ## 2026-11-14
 - Evaluasi rutin subuh (03:00 WITA), verifikasi mutlak jam sistem Linux via `date` (Sat Nov 14 03:01 WITA 2026).
 - Pembuatan dan penguncian skill permanen `youtube-thumbnail-prompting` di sistem untuk standarisasi prompt thumbnail YouTube gaming CTR tinggi (fokus close-up wajah/dada, pencahayaan tepi rim light, zona aman 20% kanan bawah, dan template siap pakai per genre) serta dokumentasi teknis [[Panduan Prompting Thumbnail YouTube Gaming Berbasis AI]].

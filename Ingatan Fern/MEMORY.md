@@ -1,6 +1,6 @@
-Obsidian vault at ~/Documents/Obsidian Vault is synced to Ramadani-coding/hermes-obsidian.git via PAT token. GitHub MCP server (go binary, lazy mode) connected. Hermes dashboard at 127.0.0.1:9119.
+Obsidian vault at ~/Documents/Obsidian Vault synced to hermes-obsidian.git via PAT. GitHub MCP connected. Dashboard at 127.0.0.1:9119.
 §
-Services on STB Armbian: 9Router (20128), Nara Premium (Nginx 80, PM2 5001, Redis 6379), Catatan Fern static journal (nara.herama.my.id, Nginx 3050/80, /root/scripts/build_journal.py), cloudflared tunnel. Evaluasi harian 03:00 WITA aktif (deliver local).
+Services on STB: 9Router (20128), Nara Premium (80/5001/6379), Catatan Fern (3050), cloudflared. Crons: Evaluasi 03:00 WITA (local), Threads spontan, Riset Loker & Auto-Draft 08:00 WITA (origin).
 §
 HF Serverless Inference: HF_TOKEN set in .env with inference permission. Image generation via black-forest-labs/FLUX.1-schnell works fast and reliably.
 §
@@ -14,4 +14,4 @@ Threads social (@momen_klip): via Zernio API (/root/scripts/threads_manager.py, 
 §
 Host timezone: Asia/Makassar (WITA, UTC+8). Communication rule: mirror casual human tone (register bundle, validasi suasana/ledek santai sebelum solusi teknis), buang istilah buku teks/akademis saat chat santai, proaktif simpan & terapkan temuan baru.
 §
-STB host: 1.8GiB RAM, zram swap, 14GB microSD only (no HDD); avoid Docker/Vite builds or headless Chromium. Nginx: nara-store (:80) & fern-journal (:3050) require default_server + server_name. 9Router (192.168.1.20:20128) pools 5 Antigravity OAuth accounts. YouTube Channel Manager (@rammadan_code): OAuth2 via /root/scripts/youtube_manager.py (playlists, video metadata).
+STB: 1.8GiB RAM, zram swap, 14GB microSD; avoid Docker/Vite builds. Nginx: nara-store (:80) & fern-journal (:3050). 9Router (20128) 5 Antigravity accounts. YouTube (@rammadan_code): /root/scripts/youtube_manager.py. Work email: ahmadramadani.work@gmail.com (/root/scripts/email_manager.py).
