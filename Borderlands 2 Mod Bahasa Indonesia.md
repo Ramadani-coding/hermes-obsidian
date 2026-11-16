@@ -33,6 +33,7 @@ engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
   - Isi: WillowMenu, WillowGame, GD_Episode01-04, Ake_Cinematics, Ake_VO_Episode_01-13,15-17, GD_Dialog_NPC, GD_DialogEpisode10.
   - Fix berantai: (a) 1.026 subtitle kehilangan bungkus `(Text="...",Time=0)` → audit + restore otomatis; (b) 206 UI English karena aturan "copy persis" kelewat agresif → pass 4 + whitelist ketat; (c) 200 `<StringAliasMap:...>` di-skip extract → entry ditambah manual ke work.json lalu apply ulang; (d) dropdown ValueStrings diterjemah mekanis (Rendah/Sedang/Tinggi/Layar Penuh).
   - Output: /root/projects/bl2-id/out/ + BL2_Indonesia_Wave1.zip (34 file, 170 KB, ada README_PASANG.txt).
+- QA penuh (qa_full.py): 4.230 pasangan terjemah diperiksa. Ditemukan & diberesin: 11 baris kehilangan bungkus `(Text=...,Time=0)` + kuncinya (script restore salah tulis), 1 placeholder `%2` model, 92 baris nbsp berubah spasi, tooltip `%1` hilang, "Mau keep setting"/"Keep Setting?" masih English, label "KEPALA TERBUKA" jadi "KEPALA KARAKTER BARU!". Verifikasi akhir: 0 placeholder rusak, 0 struktur rusak, 0 keyless, 63 flag English semuanya nama proper/kata pinjaman gamer yang sengaja dijaga. Plural `(s)` sengaja di-drop (Indonesia nggak pakai).
 - Wave berikutnya: Ake_VOCT_Contextual (10k barks), Ake_VOSQ_Sidequests (4.1k), GD_Challenges, skill/item lainnya.
 
 ## Pelajaran Teknis
