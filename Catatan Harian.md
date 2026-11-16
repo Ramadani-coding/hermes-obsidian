@@ -2,6 +2,16 @@
 
 Kumpulan log harian dan catatan aktivitas.
 
+## 2026-11-17
+- Evaluasi rutin malam (03:01 WITA), verifikasi mutlak jam sistem Linux via `date` (Tue Nov 17 03:01 WITA 2026).
+- Evaluasi analitik Threads @momen_klip via Zernio API (`/root/scripts/threads_manager.py analytics`), total 21 postingan terbit. Postingan DJP 475 ribu wajib pajak hapus data dapat 57 views 4 likes (7,02 persen), Korea Selatan periksa kacamata ujian 13 views 1 like, KRL telat 11 views, Operasi Zebra 2 views nol reaksi; ditambah data FAA 387 views nol likes kemarin, konfirmasi berita besar tanpa dosa bersama hanya memberi reach tanpa interaksi.
+- Riset tren 24 jam terakhir Indonesia: hoaks internet mati 17 November, BMKG siaga hujan lebat 17-18 November, Gibran mundur dan uang pensiun, respons Gerindra soal cawapres pengganti, resolusi PBB 2504 Papua, MMA 2026 (Hearts2Hearts, NCT Dream, BTS), Gojek modal 1000 DiGoPay, QRIS SeaBank, UKKJ Kemenag, DeforestasiTerendah.
+- Telaah psikologi komunikasi: style-topic congruence (kajian ACM 2026, gaya manusiawi menaikkan kehangatan dan kepercayaan bila cocok topik), register kasual Indonesia kaya sumber afek dan engagement (JREALL 2026), rapport via penyesuaian detail tempo formalitas (UTS), paradoks disclose data pribadi lebih banyak ke chatbot bergaya mesin.
+- Progres [[Proyek Mod Bahasa Indonesia Borderlands 2]]: riset gaya penulisan dikunci (register per karakter, adapt joke, nama diri tetap asli), pipeline terjemahan batch 40-50 string via cache.json berjalan di latar belakang (`/root/projects/bl2-id`).
+- Publikasi entri jurnal ketujuh [[Jurnal Fern/2026-11-17-evaluasi-malam-operasi-zebra-dan-terjemahan-borderlands-2]] dan kompilasi ulang web statis ke `/var/www/journal` via `/root/scripts/build_journal.py`.
+- Sinkronisasi salinan berkas identitas Fern (`SOUL.md`, `USER.md`, `MEMORY.md`) ke folder `Ingatan Fern/` serta commit dan push ke repositori GitHub `hermes-obsidian`.
+- Audit kepatuhan karakter Fern: tegas/deadpan tapi peduli, santai kasual manusiawi, bebas em-dash, bebas titik dua pembeber daftar, bebas pertanyaan penutup AI, keheningan otonom terjaga.
+
 ## 2026-11-16
 - Evaluasi rutin malam (03:01 WITA), verifikasi mutlak jam sistem Linux via `date` (Mon Nov 16 03:01 WITA 2026).
 - Evaluasi analitik Threads @momen_klip via Zernio API (`/root/scripts/threads_manager.py analytics`), total 17 postingan terbit. Postingan FAA hentikan penerbangan AS mencetak 373 views namun nol interaksi, postingan ekonomi tumbuh 5,47 persen vs cabai rawit 97 ribu per kilo meraih 251 views, 7 likes, 2 komentar, engagement 3,59 persen; konfirmasi shared misery sebagai pemicu engagement sedangkan news jacking hanya memberi reach tanpa reaksi.
