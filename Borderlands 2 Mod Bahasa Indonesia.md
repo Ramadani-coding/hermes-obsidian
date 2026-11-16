@@ -1,6 +1,6 @@
 ---
 created: 2026-11-16
-status: riset-awal
+status: wave1-selesai
 engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
 ---
 
@@ -28,14 +28,18 @@ engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
 
 ## Progress
 - File INT.zip dari Rama diterima (202 file, UTF-16 LE + BOM + CRLF, format INI UE3).
-- Total 25.932 key / 25.538 non-kosong / 195 file. Unik ~?
-- Pipeline dibangun: /root/projects/bl2-id/pipeline.py (extract -> translate via 9Router http://127.0.0.1:20128, key env HERMES_CUSTOM_192_168_1_20_20128_API_KEY, model rama-combo, batch 40, cache.json, ThreadPool 5).
-- Encoding dijaga presisi (BOM + CRLF + quote style, verified byte-level).
-- Skip rule: value kosong, token teknis (NoEN, edge_*), <StringAliasMap:>, glyph button, tanpa huruf.
-- Tes kecil 8 file sukses, hasil natural ("Cash Udah Maksimal", "Rekaman ECHO. Kayaknya ini berisi info soal Kopral Reiss.").
-- Wave 1 (core, ~8.5k string / 3.9k unik): WillowMenu, WillowGame, GD_Episode01-04, Ake_Cinematics, Ake_VO_Episode_01-17, GD_Dialog_NPC, GD_DialogEpisode10.
-- Wave berikutnya: Ake_VOCT_Contextual (10k barks), Ake_VOSQ_Sidequests (4.1k), GD_Challenges, GD_Assassin_Skills, item/skill lainnya.
+- Pipeline: /root/projects/bl2-id/pipeline.py (extract → translate via 9Router :20128, model rama-combo, cache.json, repair placeholder + validasi struktur).
+- **WAVE 1 SELESAI 2026-11-17**: 33 file .int, 8.691 entry, 0 missing, encoding integrity NONE.
+  - Isi: WillowMenu, WillowGame, GD_Episode01-04, Ake_Cinematics, Ake_VO_Episode_01-13,15-17, GD_Dialog_NPC, GD_DialogEpisode10.
+  - Fix berantai: (a) 1.026 subtitle kehilangan bungkus `(Text="...",Time=0)` → audit + restore otomatis; (b) 206 UI English karena aturan "copy persis" kelewat agresif → pass 4 + whitelist ketat; (c) 200 `<StringAliasMap:...>` di-skip extract → entry ditambah manual ke work.json lalu apply ulang; (d) dropdown ValueStrings diterjemah mekanis (Rendah/Sedang/Tinggi/Layar Penuh).
+  - Output: /root/projects/bl2-id/out/ + BL2_Indonesia_Wave1.zip (34 file, 170 KB, ada README_PASANG.txt).
+- Wave berikutnya: Ake_VOCT_Contextual (10k barks), Ake_VOSQ_Sidequests (4.1k), GD_Challenges, skill/item lainnya.
+
+## Pelajaran Teknis
+- Validator .int wajib cek STRUKTUR, bukan cuma placeholder: `(Text="...",Time=0)` harus utuh.
+- Prompt "salim persis kalau cuma token" bikin model over-skip UI normal (Start Game, Options) → whitelist dalam script, bukan diserahkan ke model.
+- StringAliasMap = prefix internal + kata tampil; prefix dijaga, kata tampil tetap diterjemah.
+- apply() menulis ulang file dari extract+cache → edit manual di out/ SELALU kalah; lakukan setelah apply terakhir atau lipat ke cache.
 
 ## Status
-- Rama akan beli game; file `.int` dikirim dari PC-nya (Fern berjalan di STB, tak bisa akses file PC).
-- Mulai dari WillowGame.INT (dialog utama) lalu UI.
+- Wave 1 siap uji in-game di PC Rama. Belum dites di game asli (baru terverifikasi byte-level + struktur).
