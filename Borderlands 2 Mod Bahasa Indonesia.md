@@ -35,12 +35,14 @@ engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
   - Output: /root/projects/bl2-id/out/ + BL2_Indonesia_Wave1.zip (34 file, 170 KB, ada README_PASANG.txt).
 - QA penuh (qa_full.py): 4.230 pasangan terjemah diperiksa. Ditemukan & diberesin: 11 baris kehilangan bungkus `(Text=...,Time=0)` + kuncinya (script restore salah tulis), 1 placeholder `%2` model, 92 baris nbsp berubah spasi, tooltip `%1` hilang, "Mau keep setting"/"Keep Setting?" masih English, label "KEPALA TERBUKA" jadi "KEPALA KARAKTER BARU!". Verifikasi akhir: 0 placeholder rusak, 0 struktur rusak, 0 keyless, 63 flag English semuanya nama proper/kata pinjaman gamer yang sengaja dijaga. Plural `(s)` sengaja di-drop (Indonesia nggak pakai).
 - Wave berikutnya: Ake_VOCT_Contextual (10k barks), Ake_VOSQ_Sidequests (4.1k), GD_Challenges, skill/item lainnya.
+- **HOTFIX 1 (2026-11-17)**: narasi intro game masih English saat uji in-game. Penyebab: subtitle runtime + 182 TIP_ loading screen tinggal di `Subtitles.int` (file resmi depot Steam, format `[Subtitles]` key=value) yang TIDAK termasuk 33 file wave 1. Ake_VO_Episode_01.int ternyata bukan yang dipakai engine untuk subtitle intro. Fix: `subtitles_fix.py` terjemah 221 string (50 VO narasi + 171 TIP_) via pipeline cache, hasil out/Subtitles.int, zip jadi 34 .int + README (35 file). QA: key order 232/232 identik, token [SkipMovie]/[Use] utuh, BOM+CRLF+UTF-16LE pas, 2 patch manual (TIP_201 "Kesaan"→"Rarity", narasi "gurun"→"gurun pasir" konsisten wave 1).
 
 ## Pelajaran Teknis
 - Validator .int wajib cek STRUKTUR, bukan cuma placeholder: `(Text="...",Time=0)` harus utuh.
+- Subtitle yang tampil di layar + TIP_ loading screen berasal dari Subtitles.int (format `[Subtitles]` key=value, 232 baris), BUKAN dari file Ake_VO_Episode_*. Terjemah file VO saja tidak mengubah subtitle runtime. Selalu cocokkan daftar file depot (SteamDB) dengan yang sudah diterjemah sebelum rilis.
 - Prompt "salim persis kalau cuma token" bikin model over-skip UI normal (Start Game, Options) → whitelist dalam script, bukan diserahkan ke model.
 - StringAliasMap = prefix internal + kata tampil; prefix dijaga, kata tampil tetap diterjemah.
 - apply() menulis ulang file dari extract+cache → edit manual di out/ SELALU kalah; lakukan setelah apply terakhir atau lipat ke cache.
 
 ## Status
-- Wave 1 siap uji in-game di PC Rama. Belum dites di game asli (baru terverifikasi byte-level + struktur).
+- Wave 1 + hotfix 1 (Subtitles.int) siap uji in-game. Menunggu konfirmasi Rama setelah pasang ulang zip.
