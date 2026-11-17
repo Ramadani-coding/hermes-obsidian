@@ -6,20 +6,25 @@ engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
 
 # Proyek Mod Bahasa Indonesia Borderlands 2
 
-## Riset Gaya Penulisan (2026-11-16)
-- Nada: sinis, tongue-in-cheek, dark humor. Story utama serius (tonal touchstone Firefly), side quest surreal/gila.
-- Karakter punya voice unik: Handsome Jack (sombong/mock), Tiny Tina (bocil random + brutal), Mr. Torgue (CAPS, obsessed ledakan), Scooter (redneck), Ellie (kasar), Tannis (awkward), Marcus (serakah).
-- Banyak referensi pop culture/meme + joke random. Insult khas: jackhole, craphole, suckers, bitch.
-- Kritik penulisan: "funniest, cleverest script since Portal 2" (pinsof via wiki).
+## Riset gaya penulisan
 
-## SOP Terjemahan
-1. Register per karakter, bukan satu gaya untuk semua. Jack pakai kamu/lo merendahkan; Tina bahasa anak kecil; Torgue berteriak.
-2. Joke: adapt ke setaraan Indonesia kalau ada yang pas, biarin kalau nggak ada. Jangan harfiah jadi aneh.
-3. Nama diri/tempat/senjata/item tetap asli.
-4. Placeholder {var}, newline, tag formatting dijaga verbatim.
-5. Kalimat pendek, langsung, natural kayak ngomong. Hindari kata formal (hamba, mohon, dimohonkan, tersayang).
-6. Tidak ada fan translation Indonesia resmi untuk BL2 — proyek dari nol.
-7. Pipeline: batch 40-50 string/prompt, cache.json indexed, thread pool kalau proxy router aktif, "stream": false di payload.
+Panduan kanon suara karakter dan aturan kreatif proyek sekarang ada di [[Borderlands 2 - Panduan Dialog Indonesia]]. Dokumen itu wajib menjadi acuan sebelum menerjemahkan dialog baru.
+
+Ringkasan
+- Nada dunia: sinis, dark humor, absurd, dengan bagian cerita utama yang bisa serius dan emosional.
+- Setiap karakter wajib punya register sendiri. Jangan ada gaya global yang meratakan semua dialog menjadi `gue-lo` atau bahasa baku.
+- Joke diadaptasi demi efek yang setara, bukan diterjemahkan harfiah sampai aneh.
+- Nama lore dan proper noun tetap asli kecuali diputuskan di glosarium.
+- Placeholder, newline, tag formatting, serta wrapper teknis dijaga verbatim.
+- Tidak ada fan translation Indonesia resmi untuk BL2. Proyek dimulai ulang dari sumber bersih.
+
+## SOP terjemahan
+1. Dialog cerita diterjemahkan dalam blok dengan pembicara serta konteks sebelum-sesudahnya.
+2. Barks tempur pendek, bertenaga, dan terbaca cepat.
+3. UI serta objective dipadatkan dan dibuat konsisten.
+4. String ambigu ditandai untuk konteks tambahan atau uji in-game. Jangan mengarang maksudnya.
+5. QA kreatif cek suara karakter, emosi, keterbacaan, efek joke, konsistensi istilah, dan struktur teknis.
+6. Pipeline teknis serta cache dibuat ulang setelah source `INT` bersih disiapkan.
 
 ## Prioritas Pengerjaan (request Rama 2026-11-16)
 1. Dialog cerita utama + UI/menu dulu (core).
