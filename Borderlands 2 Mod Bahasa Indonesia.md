@@ -40,6 +40,7 @@ engine: Unreal Engine 3 (plain text .int di WillowGame/Localization/INT/)
 ## Pelajaran Teknis
 - Validator .int wajib cek STRUKTUR, bukan cuma placeholder: `(Text="...",Time=0)` harus utuh.
 - Subtitle yang tampil di layar + TIP_ loading screen berasal dari Subtitles.int (format `[Subtitles]` key=value, 232 baris), BUKAN dari file Ake_VO_Episode_*. Terjemah file VO saja tidak mengubah subtitle runtime. Selalu cocokkan daftar file depot (SteamDB) dengan yang sudah diterjemah sebelum rilis.
+- Blurb "Combat Style" di layar pilih karakter (mis. "Keep to cover and never give the enemy a chance") BUKAN string .int — baked di asset UI (GFx/.upk), di luar jangkauan mod .int. Dibuktikan: fragmen teksnya nggak ada di 202 file .int asli. Cuma header "Combat Style:" yang localizable.
 - Prompt "salim persis kalau cuma token" bikin model over-skip UI normal (Start Game, Options) → whitelist dalam script, bukan diserahkan ke model.
 - StringAliasMap = prefix internal + kata tampil; prefix dijaga, kata tampil tetap diterjemah.
 - apply() menulis ulang file dari extract+cache → edit manual di out/ SELALU kalah; lakukan setelah apply terakhir atau lipat ke cache.
