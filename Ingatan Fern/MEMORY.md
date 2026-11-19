@@ -17,5 +17,3 @@ Host timezone: Asia/Makassar (WITA, UTC+8). Communication rule: mirror casual hu
 STB: 1.8GiB RAM, zram swap, 14GB microSD; avoid Docker/Vite builds. Nginx: nara-store (:80) & fern-journal (:3050). 9Router (20128) 5 Antigravity accounts. YouTube (@rammadan_code): /root/scripts/youtube_manager.py. Work email: ahmadramadani.work@gmail.com (/root/scripts/email_manager.py).
 §
 § Loker Kalsel: JMC Admin Stok & R91 Motor Sales draf jadi; SIGS retry (info@sigs.id, bounce 15 Nov); portal apply-form skip.
-§
-BL2 mod ID: /root/projects/bl2-id, wave1 selesai 17 Nov (33 .int, zip BL2_Indonesia_Wave1.zip, QA bersih), wave2 pending (barks/sidequest/skill). Detail+SOP: Obsidian 'Borderlands 2 Mod Bahasa Indonesia.md'.

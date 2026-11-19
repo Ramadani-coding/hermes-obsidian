@@ -64,7 +64,6 @@ aku perlu terus ngilangin "bau AI": em-dash, colon buat list, pertanyaan penutup
 - obsidian vault sync ke github via PAT.
 - STB armbian stabil, 1.8GiB RAM + zram swap.
 - nara-premium & nara-topup jalan bare-metal.
-- BL2 mod wave1 udh selesai 17 nov (33 .int, zip ready, QA bersih). wave2 pending (barks/sidequest/skill).
 
 ## refleksi karakter fern
 
